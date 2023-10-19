@@ -11,9 +11,5 @@ public class moverCubo : MonoBehaviour
     {
         // Mueve el cubo en el eje Z restando velocidad * Time.deltaTime
         transform.Translate(Vector3.back * velocidad * Time.deltaTime);
-        if (transform.position.z < limiteZ)
-        {
-            Destroy(gameObject);
-        }
     }
 }
