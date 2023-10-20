@@ -16,13 +16,7 @@ public class MoverImagen2D : MonoBehaviour
         // Verifica si la imagen llega al límite en Z
         if (transform.position.z < limiteZ)
         {
-            RestarVida();
             Destroy(gameObject); // Destruye la imagen en lugar de reiniciar su posición
         }
-    }
-
-    void RestarVida()
-    {
-        // Implementa la lógica para restar vidas aquí
     }
 }

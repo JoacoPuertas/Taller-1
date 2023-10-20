@@ -42,6 +42,7 @@ public class GenerarMonstruos : MonoBehaviour
             // Verifica si la imagen llega a la posición Z = -10
             if (imagen.transform.position.z < -10)
             {
+                GameManager.Instance.PerderVida();
                 RestarVida();
                 Destroy(imagen);
             }
