@@ -24,7 +24,7 @@ public class Mira : MonoBehaviour
             if (impacto.collider.CompareTag("Cubo")) 
             {
                 Destroy(impacto.collider.gameObject);
-                Debug.Log("aldasdlasldasd");
+                Debug.Log("Te maté");
             }
         }
     }

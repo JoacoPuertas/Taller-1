@@ -21,7 +21,7 @@ public class RestarVidas : MonoBehaviour
         }
     }
 
-    void RestarVida()
+     void RestarVida()
     {
         vidas--;
         Debug.Log("Vidas: " + vidas);
