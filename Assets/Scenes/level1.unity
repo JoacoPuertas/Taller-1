@@ -422,8 +422,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabMonstruo: {fileID: 4378083803770944096, guid: 4a227e6b38b69fa488946cd818e09dcc, type: 3}
   vidas: 5
-  velocidad: 3
+  velocidad: 10
   posicionInicial: {x: 0, y: 1, z: 70}
+  tiempoEntreSpawn: 3
 --- !u!4 &774295114
 Transform:
   m_ObjectHideFlags: 0
@@ -469,9 +470,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 25
-  vidas: 5
-  posX: 4
   posY: 1
+  limiteZ: -10
 --- !u!4 &818656811
 Transform:
   m_ObjectHideFlags: 0
@@ -613,8 +613,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabMonstruo: {fileID: 576522678539619009, guid: b261d98c343927f4683d3e91b5e4c386, type: 3}
   vidas: 5
-  velocidad: 15
+  velocidad: 10
   posicionInicial: {x: 4, y: 1, z: 70}
+  tiempoEntreSpawn: 2.5
 --- !u!4 &879542927
 Transform:
   m_ObjectHideFlags: 0
@@ -837,9 +838,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 15
-  vidas: 5
-  posX: -4
   posY: 1
+  limiteZ: -10
 --- !u!4 &973892911
 Transform:
   m_ObjectHideFlags: 0
@@ -892,8 +892,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabMonstruo: {fileID: 4451377911565498600, guid: de91bf16b769dd440a34d89aaa5b0ca3, type: 3}
   vidas: 5
-  velocidad: 25
+  velocidad: 15
   posicionInicial: {x: -4, y: 1, z: 70}
+  tiempoEntreSpawn: 2
 --- !u!4 &1129623433
 Transform:
   m_ObjectHideFlags: 0
@@ -1838,9 +1839,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 30
-  vidas: 5
-  posX: 0
   posY: 1
+  limiteZ: -10
 --- !u!4 &2039672872
 Transform:
   m_ObjectHideFlags: 0

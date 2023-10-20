@@ -8,11 +8,12 @@ public class GenerarMonstruos : MonoBehaviour
     public int vidas = 5; // Cantidad inicial de vidas
     public float velocidad; // Velocidad de movimiento de las imágenes
     public Vector3 posicionInicial = new Vector3(0f, 1.0f, 30.0f);
+    public float tiempoEntreSpawn = 2.0f; // Tiempo entre la generación de monstruos
 
     void Start()
     {
         // Comienza la generación continua de imágenes
-        InvokeRepeating("GenerarImagen", 0.0f, 2.0f); // Genera una imagen cada 2 segundos
+        InvokeRepeating("GenerarImagen", 0.0f, tiempoEntreSpawn); // Genera una imagen cada ciertos segundos
     }
 
     void GenerarImagen()
@@ -25,6 +26,7 @@ public class GenerarMonstruos : MonoBehaviour
         if (moverImagen != null)
         {
             moverImagen.velocidad = velocidad;
+            moverImagen.limiteZ = -10.0f; // Asigna el límite en Z
         }
     }
 

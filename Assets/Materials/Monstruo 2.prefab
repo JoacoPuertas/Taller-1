@@ -156,7 +156,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edde357fbe5e45547a0e2c6212840398, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 15
-  vidas: 5
-  posX: 4
+  velocidad: 1
   posY: 1
+  limiteZ: -10

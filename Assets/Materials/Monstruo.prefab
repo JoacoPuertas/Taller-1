@@ -144,6 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 537cff42bc5eee54bb1ecd0148e7781f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  alcanceMaximo: 100
 --- !u!114 &378926553707318396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,7 +157,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edde357fbe5e45547a0e2c6212840398, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 20
-  vidas: 5
-  posX: 0
+  velocidad: 1
   posY: 1
+  limiteZ: -10
