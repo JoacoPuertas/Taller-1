@@ -17,6 +17,8 @@ public class MoverImagen2D : MonoBehaviour
         if (transform.position.z < limiteZ)
         {
             Destroy(gameObject); // Destruye la imagen en lugar de reiniciar su posición
+            //aca resta una vida
+            HUD.Instance.DesactivarVida();
         }
     }
 }
