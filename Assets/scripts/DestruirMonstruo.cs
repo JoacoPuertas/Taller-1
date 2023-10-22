@@ -27,4 +27,8 @@ public class DestruirMonstruo : MonoBehaviour
     {
         Destroy(gameObject); // Destruye el monstruo actual
     }
+
+    private void DestruirMonstruoConHorquilla() {
+        Destroy(GameObject.FindWithTag("Monstruo"));
+    }
 }
