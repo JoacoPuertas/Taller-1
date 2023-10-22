@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -7,6 +8,8 @@ public class GameManager : MonoBehaviour
     private int vidas = 3;
     private GameState _actualGameState;
     [SerializeField] private GameObject _ventanaDePerder;
+    [SerializeField] private GameObject _inicio;
+    [SerializeField] private GameObject _Spawn;
 
 
     //Lo tengo en el boton de perder
@@ -14,7 +17,16 @@ public class GameManager : MonoBehaviour
     {
         _actualGameState = GameState.Inicio;
         UpdateGameState();
-        ApagarVentanaPerder();
+        Reiniciar();
+    }
+
+    public void Reiniciar() {
+        _inicio.SetActive(true);
+        _Spawn.SetActive(false);
+    }
+    public void ApagarVentanaInicio() {
+        _inicio.SetActive(false);
+        _Spawn.SetActive(true);
     }
     public void ApagarVentanaPerder()
     {
@@ -31,9 +43,13 @@ public class GameManager : MonoBehaviour
         switch (_actualGameState)
         {
             case GameState.Inicio:
+                _inicio.SetActive(true);
+                _Spawn.SetActive(false);
                 //prender la pantalla de inicio 
                 break;
             case GameState.Jugar:
+                _inicio.SetActive(false);
+                _Spawn.SetActive(true);
                 //apagar pantalla de inicio y prender el juego
                 break;
             case GameState.Perder:
