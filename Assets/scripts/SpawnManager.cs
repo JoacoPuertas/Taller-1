@@ -20,36 +20,29 @@ public class SpawnManager : MonoBehaviour
     [SerializeField, Range(0, 10)]
     private float tiempoDeSpawn1 = 5;
 
-
-    [Space]
-    [Header("Nivel2")]
-
-    [SerializeField]
-    public List<Mostros> TodosLoMostros2 = new List<Mostros>();
-    [Space]
-    [Header("Nivel3")]
-    [SerializeField]
-    public List<Mostros> TodosLoMostros3 = new List<Mostros>();
-
-
     private float actualTime;
+
     private void Update()
     {
         actualTime += Time.deltaTime;
         if (actualTime > tiempoDeSpawn1)
         {
-            int mostroRandom = UnityEngine.Random.Range(0, TodosLoMostrosTerrestres1.Count);
+            int terrestreRandom = UnityEngine.Random.Range(0, TodosLoMostrosTerrestres1.Count);
+            int aereoRandom = UnityEngine.Random.Range(0, TodosLoMostrosAereos1.Count);
 
-            float posicionRandom = UnityEngine.Random.Range(-4f, 4f);
+            float posicionTerrestreRandom = UnityEngine.Random.Range(-4f, 4f);
+            float posicionAereoRandom = UnityEngine.Random.Range(-4f, 4f);
 
-            Vector3 actualPos = new Vector3(posicionRandom, transform.position.y, transform.position.z);
+            Vector3 posTerrestre = new Vector3(posicionTerrestreRandom, transform.position.y, transform.position.z);
+            Vector3 posAereo = new Vector3(posicionAereoRandom, transform.position.y + 5f, transform.position.z);
 
-            GameObject MostroEspawneado = Instantiate(TodosLoMostrosTerrestres1[mostroRandom].Mostro,
-                                                        actualPos,
-                                                        Quaternion.identity);
-            MostroEspawneado.GetComponent<MoverImagen2D>().velocidad = TodosLoMostrosTerrestres1[mostroRandom].Velocidad;
+            GameObject terrestreSpawned = Instantiate(TodosLoMostrosTerrestres1[terrestreRandom].Mostro, posTerrestre, Quaternion.identity);
+            GameObject aereoSpawned = Instantiate(TodosLoMostrosAereos1[aereoRandom].Mostro, posAereo, Quaternion.identity);
+
+            terrestreSpawned.GetComponent<MoverImagen2D>().velocidad = TodosLoMostrosTerrestres1[terrestreRandom].Velocidad;
+            aereoSpawned.GetComponent<MoverImagen2D>().velocidad = TodosLoMostrosAereos1[aereoRandom].Velocidad;
+
             actualTime = 0;
         }
     }
-
 }

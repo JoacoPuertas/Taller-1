@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     private int vidas = 3;
     private GameState _actualGameState;
     [SerializeField] private GameObject _ventanaDePerder;
+    [SerializeField] private GameObject _ventanaDeGanar;
     [SerializeField] private GameObject _inicio;
     [SerializeField] private GameObject _Spawn;
     [SerializeField] private GameObject _Oleada2;
@@ -26,6 +27,7 @@ public class GameManager : MonoBehaviour
     public void Reiniciar() {
         _inicio.SetActive(true);
         _Spawn.SetActive(false);
+        vidas = 3;
     }
     public void ApagarVentanaInicio() {
         _inicio.SetActive(false);
@@ -34,6 +36,10 @@ public class GameManager : MonoBehaviour
     public void ApagarVentanaPerder()
     {
         _ventanaDePerder.SetActive(false);
+    }
+    public void ApagarVentanaGanar()
+    {
+        _ventanaDeGanar.SetActive(false);
     }
     public void ChangeActualScene(GameState newGamestate)
     {
@@ -57,10 +63,13 @@ public class GameManager : MonoBehaviour
                 break;
             case GameState.Perder:
                 //ventana de que sos malisimo
+                _Spawn.SetActive(false);
                 _ventanaDePerder.SetActive(true);
                 break;
             case GameState.Ganar:
                 //ventana de que sos un titan
+                _Spawn.SetActive(false);
+                _ventanaDeGanar.SetActive(true);
                 break;
             default:
 
