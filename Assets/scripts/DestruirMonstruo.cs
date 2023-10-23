@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DestruirMonstruo : MonoBehaviour
+
 {
+    [SerializeField] private KeyCode Tecla;
     void Start()
     {
 
@@ -12,7 +14,10 @@ public class DestruirMonstruo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKeyDown(Tecla))
+        {
+            DestruirEsteMonstruo();
+        }
     }
 
     private void OnMouseOver()
@@ -21,6 +26,7 @@ public class DestruirMonstruo : MonoBehaviour
         {
             DestruirEsteMonstruo();
         }
+        
     }
     private void DestruirEsteMonstruo()
     {
