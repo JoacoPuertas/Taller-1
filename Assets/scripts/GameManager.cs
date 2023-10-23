@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+
     public static GameManager Instance { get; private set; }
     public HUD hud;
     private int vidas = 3;
@@ -10,6 +11,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject _ventanaDePerder;
     [SerializeField] private GameObject _inicio;
     [SerializeField] private GameObject _Spawn;
+    [SerializeField] private GameObject _Oleada2;
+
 
 
     //Lo tengo en el boton de perder

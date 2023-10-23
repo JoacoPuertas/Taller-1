@@ -7,6 +7,9 @@ TagManager:
   - obstaculo
   - Cubo
   - Monstruo
+  - Zona1
+  - Zona2
+  - Zona3
   layers:
   - Default
   - TransparentFX

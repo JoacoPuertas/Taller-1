@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class DestruirMonstruo : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
 
@@ -28,7 +27,5 @@ public class DestruirMonstruo : MonoBehaviour
         Destroy(gameObject); // Destruye el monstruo actual
     }
 
-    private void DestruirMonstruoConHorquilla() {
-        Destroy(GameObject.FindWithTag("Monstruo"));
-    }
+    
 }
