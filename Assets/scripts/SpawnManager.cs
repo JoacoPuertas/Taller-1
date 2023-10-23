@@ -17,9 +17,9 @@ public class SpawnManager : MonoBehaviour
     public List<Mostros> TodosLoMostrosTerrestres1 = new List<Mostros>();
     [SerializeField]
     public List<Mostros> TodosLoMostrosAereos1 = new List<Mostros>();
-    [SerializeField,Range(0,10)]
+    [SerializeField, Range(0, 10)]
     private float tiempoDeSpawn1 = 5;
-    
+
 
     [Space]
     [Header("Nivel2")]
@@ -36,16 +36,16 @@ public class SpawnManager : MonoBehaviour
     private void Update()
     {
         actualTime += Time.deltaTime;
-        if(actualTime > tiempoDeSpawn1)
+        if (actualTime > tiempoDeSpawn1)
         {
-            int mostroRandom = UnityEngine.Random.Range(0,TodosLoMostrosTerrestres1.Count);
+            int mostroRandom = UnityEngine.Random.Range(0, TodosLoMostrosTerrestres1.Count);
 
-            float posicionRandom = UnityEngine.Random.Range(-4f,4f);
+            float posicionRandom = UnityEngine.Random.Range(-4f, 4f);
 
             Vector3 actualPos = new Vector3(posicionRandom, transform.position.y, transform.position.z);
 
             GameObject MostroEspawneado = Instantiate(TodosLoMostrosTerrestres1[mostroRandom].Mostro,
-                                                        actualPos, 
+                                                        actualPos,
                                                         Quaternion.identity);
             MostroEspawneado.GetComponent<MoverImagen2D>().velocidad = TodosLoMostrosTerrestres1[mostroRandom].Velocidad;
             actualTime = 0;
