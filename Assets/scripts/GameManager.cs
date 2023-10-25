@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance { get; private set; }
     public HUD hud;
-    private int vidas = 3;
+    public int vidas = 3;
     private GameState _actualGameState;
     [SerializeField] private GameObject _ventanaDePerder;
     [SerializeField] private GameObject _ventanaDeGanar;
@@ -27,11 +27,9 @@ public class GameManager : MonoBehaviour
     public void Reiniciar() {
         _inicio.SetActive(true);
         _Spawn.SetActive(false);
-        vidas = 3;
     }
     public void ApagarVentanaInicio() {
         _inicio.SetActive(false);
-        _Spawn.SetActive(true);
     }
     public void ApagarVentanaPerder()
     {
@@ -57,8 +55,7 @@ public class GameManager : MonoBehaviour
                 //prender la pantalla de inicio 
                 break;
             case GameState.Jugar:
-                _inicio.SetActive(false);
-                _Spawn.SetActive(true);
+                _inicio.SetActive(false);;
                 //apagar pantalla de inicio y prender el juego
                 break;
             case GameState.Perder:

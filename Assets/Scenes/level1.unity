@@ -334,6 +334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hud: {fileID: 1297135490}
+  vidas: 3
   _ventanaDePerder: {fileID: 1153501222}
   _ventanaDeGanar: {fileID: 810841492}
   _inicio: {fileID: 1843207689}
@@ -3129,7 +3130,7 @@ GameObject:
   m_Layer: 0
   m_Name: Bosque
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4769,7 +4770,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1027990183
 Transform:
   m_ObjectHideFlags: 0
@@ -4803,11 +4804,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TodosLoMostrosTerrestres1:
   - Mostro: {fileID: 4378083803770944096, guid: 4a227e6b38b69fa488946cd818e09dcc, type: 3}
-    Velocidad: 40
+    Velocidad: 20
   - Mostro: {fileID: 4451377911565498600, guid: de91bf16b769dd440a34d89aaa5b0ca3, type: 3}
-    Velocidad: 45
+    Velocidad: 25
   - Mostro: {fileID: 576522678539619009, guid: b261d98c343927f4683d3e91b5e4c386, type: 3}
-    Velocidad: 50
+    Velocidad: 30
   TodosLoMostrosAereos1:
   - Mostro: {fileID: 4451377911565498600, guid: 35420189c4298b44c89f5d9a90ec223c, type: 3}
     Velocidad: 15
@@ -8029,7 +8030,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1843207690
 RectTransform:
   m_ObjectHideFlags: 0
