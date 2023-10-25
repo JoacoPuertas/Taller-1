@@ -1,5 +1,6 @@
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -29,11 +30,11 @@ public class GameManager : MonoBehaviour
         _Spawn.SetActive(false);
     }
     public void ApagarVentanaInicio() {
-        _inicio.SetActive(false);
+        SceneManager.LoadScene("level1");
     }
     public void ApagarVentanaPerder()
     {
-        _ventanaDePerder.SetActive(false);
+        SceneManager.LoadScene("Menu");
     }
     public void ApagarVentanaGanar()
     {
@@ -60,8 +61,7 @@ public class GameManager : MonoBehaviour
                 break;
             case GameState.Perder:
                 //ventana de que sos malisimo
-                _Spawn.SetActive(false);
-                _ventanaDePerder.SetActive(true);
+                SceneManager.LoadScene("Perdiste");
                 break;
             case GameState.Ganar:
                 //ventana de que sos un titan

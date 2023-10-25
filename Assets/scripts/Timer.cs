@@ -11,11 +11,10 @@ public class Timer : MonoBehaviour
     public float timer = 20;
     public Text textoTimer;
     public float OleadaTimer = 3;
-    bool oleada2Started = false;
 
     void Start()
     {
-        if (SceneManager.GetActiveScene().name == "Level1")
+        if (SceneManager.GetActiveScene().name == "lsevel1")
         {
             // Activa _Spawn al inicio en la escena "Level1".
             _Spawn.SetActive(true);
@@ -25,6 +24,12 @@ public class Timer : MonoBehaviour
             // Desactiva _Spawn al inicio en la escena "Level2".
             _Spawn.SetActive(false);
         }
+        else if (SceneManager.GetActiveScene().name == "Level3")
+        {
+            // Desactiva _Spawn al inicio en la escena "Level3".
+            _Spawn.SetActive(false);
+        }
+
     }
 
     void Update()
@@ -32,18 +37,28 @@ public class Timer : MonoBehaviour
         if (_Spawn.activeSelf)
         {
             timer -= Time.deltaTime;
-
-            if (timer < 0 && SceneManager.GetActiveScene().name == "Level1")
+            textoTimer.text = "Tiempo: " + timer.ToString("f0");
+            if (timer < 0 && SceneManager.GetActiveScene().name == "level1")
             {
                 SceneManager.LoadScene("Level2");
-                // Reinicia el temporizador y marca que la oleada 2 ha comenzado.
+                // Reinicia el temporizador
                 timer = 20;
-                oleada2Started = true;
+            }
+            if (timer < 0 && SceneManager.GetActiveScene().name == "Level2")
+            {
+                SceneManager.LoadScene("Level3");
+                // Reinicia el temporizador
+                timer = 20;
+            }
+            if (timer < 0 && SceneManager.GetActiveScene().name == "Level3")
+            {
+                SceneManager.LoadScene("Ganaste");
+                timer = 20;
             }
         }
 
         // Solo disminuye OleadaTimer si estás en la escena "Level2" y no ha comenzado.
-        if (SceneManager.GetActiveScene().name == "Level2")
+        if (SceneManager.GetActiveScene().name == "Level2" || SceneManager.GetActiveScene().name == "Level3")
         {
             {
                 OleadaTimer -= Time.deltaTime;
@@ -52,10 +67,10 @@ public class Timer : MonoBehaviour
                     // Desactiva _Oleada2 y activa _Spawn cuando OleadaTimer llega a 0.
                     _Oleada2.SetActive(false);
                     _Spawn.SetActive(true);
+                    OleadaTimer = 3;
                 }
             }
 
-            textoTimer.text = "Tiempo: " + timer.ToString("f0");
         }
     }
 }

@@ -14,7 +14,7 @@ public class DestruirMonstruo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(Tecla) && transform.position.z < 20)
+        if (Input.GetKeyDown(Tecla) && transform.position.z < 10)
         {
             DestruirEsteMonstruo();
         }
