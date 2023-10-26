@@ -2863,6 +2863,38 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 551054472}
   m_Mesh: {fileID: 4300000, guid: c6029981137bd4653b2149d26518cf28, type: 2}
+--- !u!1 &559483370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 559483371}
+  m_Layer: 0
+  m_Name: Saturno
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &559483371
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559483370}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.5462646, y: 2.121643, z: 70.620636}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1707220514}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &573350031
 GameObject:
   m_ObjectHideFlags: 0
@@ -6446,7 +6478,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Spawn: {fileID: 2028890304}
-  _Oleada2: {fileID: 445733705}
+  _Oleada2: {fileID: 559483370}
+  _Saturno: {fileID: 559483370}
   timer: 20
   textoTimer: {fileID: 1522663564}
   OleadaTimer: 3
@@ -6997,6 +7030,80 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 742f72a22d5e24c0eb6d1b58f4bdeca6, type: 3}
+--- !u!1001 &1707220513
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 559483371}
+    m_Modifications:
+    - target: {fileID: 463083468034416321, guid: 4a227e6b38b69fa488946cd818e09dcc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 463083468034416321, guid: 4a227e6b38b69fa488946cd818e09dcc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 463083468034416321, guid: 4a227e6b38b69fa488946cd818e09dcc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.5462646
+      objectReference: {fileID: 0}
+    - target: {fileID: 463083468034416321, guid: 4a227e6b38b69fa488946cd818e09dcc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.1383572
+      objectReference: {fileID: 0}
+    - target: {fileID: 463083468034416321, guid: 4a227e6b38b69fa488946cd818e09dcc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.620636
+      objectReference: {fileID: 0}
+    - target: {fileID: 463083468034416321, guid: 4a227e6b38b69fa488946cd818e09dcc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 463083468034416321, guid: 4a227e6b38b69fa488946cd818e09dcc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463083468034416321, guid: 4a227e6b38b69fa488946cd818e09dcc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463083468034416321, guid: 4a227e6b38b69fa488946cd818e09dcc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463083468034416321, guid: 4a227e6b38b69fa488946cd818e09dcc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463083468034416321, guid: 4a227e6b38b69fa488946cd818e09dcc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463083468034416321, guid: 4a227e6b38b69fa488946cd818e09dcc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3687152523893974630, guid: 4a227e6b38b69fa488946cd818e09dcc, type: 3}
+      propertyPath: _Spawn
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4378083803770944096, guid: 4a227e6b38b69fa488946cd818e09dcc, type: 3}
+      propertyPath: m_Name
+      value: Monstruo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4a227e6b38b69fa488946cd818e09dcc, type: 3}
+--- !u!4 &1707220514 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 463083468034416321, guid: 4a227e6b38b69fa488946cd818e09dcc, type: 3}
+  m_PrefabInstance: {fileID: 1707220513}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1728969030
 GameObject:
   m_ObjectHideFlags: 0
@@ -7734,11 +7841,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TodosLoMostrosTerrestres1:
   - Mostro: {fileID: 4378083803770944096, guid: 4a227e6b38b69fa488946cd818e09dcc, type: 3}
-    Velocidad: 20
+    Velocidad: 15
   - Mostro: {fileID: 4451377911565498600, guid: de91bf16b769dd440a34d89aaa5b0ca3, type: 3}
-    Velocidad: 25
+    Velocidad: 20
   - Mostro: {fileID: 576522678539619009, guid: b261d98c343927f4683d3e91b5e4c386, type: 3}
-    Velocidad: 30
+    Velocidad: 25
   TodosLoMostrosAereos1:
   - Mostro: {fileID: 4451377911565498600, guid: 35420189c4298b44c89f5d9a90ec223c, type: 3}
     Velocidad: 20
@@ -8023,3 +8130,4 @@ SceneRoots:
   - {fileID: 2028890306}
   - {fileID: 1446582234}
   - {fileID: 484314326}
+  - {fileID: 559483371}

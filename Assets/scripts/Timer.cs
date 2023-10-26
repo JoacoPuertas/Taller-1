@@ -8,13 +8,14 @@ public class Timer : MonoBehaviour
 {
     [SerializeField] private GameObject _Spawn;
     [SerializeField] private GameObject _Oleada2;
+    [SerializeField] private GameObject _Saturno;
     public float timer = 20;
     public Text textoTimer;
     public float OleadaTimer = 3;
 
     void Start()
     {
-        if (SceneManager.GetActiveScene().name == "lsevel1")
+        if (SceneManager.GetActiveScene().name == "level1")
         {
             // Activa _Spawn al inicio en la escena "Level1".
             _Spawn.SetActive(true);
@@ -34,7 +35,7 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        if (_Spawn.activeSelf)
+        if (_Spawn.activeSelf || _Saturno.activeSelf)
         {
             timer -= Time.deltaTime;
             textoTimer.text = "Tiempo: " + timer.ToString("f0");
@@ -58,7 +59,7 @@ public class Timer : MonoBehaviour
         }
 
         // Solo disminuye OleadaTimer si estás en la escena "Level2" y no ha comenzado.
-        if (SceneManager.GetActiveScene().name == "Level2" || SceneManager.GetActiveScene().name == "Level3")
+        if (SceneManager.GetActiveScene().name == "Level2")
         {
             {
                 OleadaTimer -= Time.deltaTime;
@@ -67,6 +68,20 @@ public class Timer : MonoBehaviour
                     // Desactiva _Oleada2 y activa _Spawn cuando OleadaTimer llega a 0.
                     _Oleada2.SetActive(false);
                     _Spawn.SetActive(true);
+                    OleadaTimer = 3;
+                }
+            }
+
+        }
+        else if (SceneManager.GetActiveScene().name == "Level3")
+        {
+            {
+                OleadaTimer -= Time.deltaTime;
+                if (OleadaTimer <= 0)
+                {
+                    // Desactiva _Oleada2 y activa _Spawn cuando OleadaTimer llega a 0.
+                    _Oleada2.SetActive(false);
+                    _Saturno.SetActive(true);
                     OleadaTimer = 3;
                 }
             }

@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Tecla: 100
+  _Spawn: {fileID: 0}
 --- !u!114 &2064455221456326132
 MonoBehaviour:
   m_ObjectHideFlags: 0

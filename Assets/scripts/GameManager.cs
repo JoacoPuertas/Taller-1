@@ -30,7 +30,8 @@ public class GameManager : MonoBehaviour
         _Spawn.SetActive(false);
     }
     public void ApagarVentanaInicio() {
-        SceneManager.LoadScene("level1");
+        //SceneManager.LoadScene("level1");
+        SceneManager.LoadScene("Cinematicas");
     }
     public void ApagarVentanaPerder()
     {
