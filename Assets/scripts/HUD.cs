@@ -12,7 +12,8 @@ public class HUD : MonoBehaviour
 
     private void Start()
     {
-        Instance = this;    
+        Instance = this;
+        //DontDestroyOnLoad(GameObject.FindWithTag("vidas"));
     }
     public void DesactivarVida() {
         if (vidas.Count == 1)

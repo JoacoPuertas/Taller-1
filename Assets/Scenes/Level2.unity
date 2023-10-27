@@ -6478,7 +6478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Spawn: {fileID: 2028890304}
-  _Oleada2: {fileID: 559483370}
+  _Oleada2: {fileID: 445733705}
   _Saturno: {fileID: 559483370}
   timer: 20
   textoTimer: {fileID: 1522663564}

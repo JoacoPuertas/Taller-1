@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MoverImagen2D : MonoBehaviour
 {
@@ -14,11 +15,15 @@ public class MoverImagen2D : MonoBehaviour
         transform.Translate(Vector3.back * velocidad * Time.deltaTime);
 
         // Verifica si la imagen llega al límite en Z
-        if (transform.position.z < limiteZ)
+        if (transform.position.z < limiteZ && GameObject.FindGameObjectWithTag("Monstruo"))
         {
             Destroy(gameObject); // Destruye la imagen en lugar de reiniciar su posición
             //aca resta una vida
             HUD.Instance.DesactivarVida();
+        }
+
+        if (transform.position.z < limiteZ && GameObject.FindGameObjectWithTag("Saturno")) {
+            SceneManager.LoadScene("Perdiste");
         }
     }
 }

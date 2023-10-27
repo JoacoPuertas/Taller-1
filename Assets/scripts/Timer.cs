@@ -68,7 +68,6 @@ public class Timer : MonoBehaviour
                     // Desactiva _Oleada2 y activa _Spawn cuando OleadaTimer llega a 0.
                     _Oleada2.SetActive(false);
                     _Spawn.SetActive(true);
-                    OleadaTimer = 3;
                 }
             }
 
@@ -82,7 +81,6 @@ public class Timer : MonoBehaviour
                     // Desactiva _Oleada2 y activa _Spawn cuando OleadaTimer llega a 0.
                     _Oleada2.SetActive(false);
                     _Saturno.SetActive(true);
-                    OleadaTimer = 3;
                 }
             }
 
