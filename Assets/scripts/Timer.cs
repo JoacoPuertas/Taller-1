@@ -12,6 +12,7 @@ public class Timer : MonoBehaviour
     public float timer = 20;
     public Text textoTimer;
     public float OleadaTimer = 3;
+    public float CinematicaTimer = 20;
 
     void Start()
     {
@@ -81,6 +82,17 @@ public class Timer : MonoBehaviour
                     // Desactiva _Oleada2 y activa _Spawn cuando OleadaTimer llega a 0.
                     _Oleada2.SetActive(false);
                     _Saturno.SetActive(true);
+                }
+            }
+
+        }
+        else if (SceneManager.GetActiveScene().name == "Cinematicas")
+        {
+            {
+                CinematicaTimer -= Time.deltaTime;
+                if (CinematicaTimer <= 0)
+                {
+                    SceneManager.LoadScene("level1");
                 }
             }
 

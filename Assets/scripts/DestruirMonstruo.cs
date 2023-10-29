@@ -43,6 +43,7 @@ public class DestruirMonstruo : MonoBehaviour
             SaturnoVidas--;
             if (SaturnoVidas <= 0)
             {
+                SceneManager.LoadScene("Ganaste");
                 DestruirEsteMonstruo();
                 SceneManager.LoadScene("Ganaste");
 

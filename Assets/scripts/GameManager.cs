@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -14,6 +15,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject _inicio;
     [SerializeField] private GameObject _Spawn;
     [SerializeField] private GameObject _Oleada2;
+    private string VidasPrefsName = "Vidas";
 
 
 
@@ -76,8 +78,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void OnDestroy()
+    {
+        SaveData();
+    }
     private void Awake()
     {
+        LoadData();
         _actualGameState = GameState.Inicio;
 
         if (Instance == null)
@@ -98,10 +105,28 @@ public class GameManager : MonoBehaviour
     public void PerderVida()
     {
         vidas -= 1;
+        SaveData();
         //hud.DesactivarVida(vidas);
     }
 
+    private void SaveData()
+    {
+        PlayerPrefs.SetInt(VidasPrefsName, vidas);
+        PlayerPrefs.Save(); // Guardar los datos inmediatamente
+        Debug.Log("Datos guardados. Vidas: " + vidas);
+    }
+
+    private void LoadData()
+    {
+        if (PlayerPrefs.HasKey("Vidas"))
+        {
+            vidas = PlayerPrefs.GetInt("Vidas");
+        }
+    }
+
 }
+
+
 public enum GameState
 {
     Inicio,
