@@ -84,7 +84,7 @@ public class GameManager : MonoBehaviour
     }
     private void Awake()
     {
-        LoadData();
+        
         _actualGameState = GameState.Inicio;
 
         if (Instance == null)
@@ -99,7 +99,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-
+        LoadData();
     }
 
     public void PerderVida()
@@ -120,7 +120,12 @@ public class GameManager : MonoBehaviour
     {
         if (PlayerPrefs.HasKey("Vidas"))
         {
+            if (SceneManager.GetActiveScene().name == "level1")
+            {
+                PlayerPrefs.SetInt(VidasPrefsName, 3);
+            }
             vidas = PlayerPrefs.GetInt("Vidas");
+            HUD.Instance.UpdateVidas(vidas);
         }
     }
 

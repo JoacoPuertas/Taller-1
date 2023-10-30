@@ -20,6 +20,7 @@ public class MoverImagen2D : MonoBehaviour
             Destroy(gameObject); // Destruye la imagen en lugar de reiniciar su posición
             //aca resta una vida
             HUD.Instance.DesactivarVida();
+            GameManager.Instance.PerderVida();
         }
 
         if (transform.position.z < limiteZ && GameObject.FindGameObjectWithTag("Saturno")) {

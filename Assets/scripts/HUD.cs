@@ -10,7 +10,7 @@ public class HUD : MonoBehaviour
     public static HUD Instance { get; private set; }
     public List<GameObject> vidas;
 
-    private void Start()
+    private void Awake()
     {
         Instance = this;
         //DontDestroyOnLoad(GameObject.FindWithTag("vidas"));
@@ -23,8 +23,17 @@ public class HUD : MonoBehaviour
         }
         vidas[vidas.Count-1].SetActive(false);
         vidas.RemoveAt(vidas.Count-1);
-        Debug.Log(vidas.Count);
         
+        
+    }
+
+    public void UpdateVidas(int vidasToDelete)
+    {
+        for (int i = vidas.Count; i > vidasToDelete; i--) 
+        {
+            vidas[vidas.Count - 1].SetActive(false);
+            vidas.RemoveAt(vidas.Count - 1);
+        }
     }
 
     public void ActivasVida(int indice)
