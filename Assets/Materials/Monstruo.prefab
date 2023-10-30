@@ -117,6 +117,10 @@ MonoBehaviour:
   velocidad: 5
   posY: 1
   limiteZ: -10
+  "rasgu\xF1o0": {fileID: 0}
+  "rasgu\xF1o1": {fileID: 0}
+  "rasgu\xF1o2": {fileID: 0}
+  i: 0
 --- !u!50 &-509167983086160279
 Rigidbody2D:
   serializedVersion: 4

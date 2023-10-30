@@ -9,11 +9,10 @@ public class HUD : MonoBehaviour
 {
     public static HUD Instance { get; private set; }
     public List<GameObject> vidas;
-
+    public GameObject rasguño;
     private void Awake()
     {
         Instance = this;
-        //DontDestroyOnLoad(GameObject.FindWithTag("vidas"));
     }
     public void DesactivarVida() {
         if (vidas.Count == 1)
@@ -39,6 +38,10 @@ public class HUD : MonoBehaviour
     public void ActivasVida(int indice)
     {
         vidas[indice].SetActive(true);
+    }
+
+    public void ActivarRasguño() {
+        rasguño.SetActive(true);
     }
 
 }

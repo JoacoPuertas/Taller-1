@@ -46,6 +46,7 @@ public class DestruirMonstruo : MonoBehaviour
                 SceneManager.LoadScene("Ganaste");
                 DestruirEsteMonstruo();
                 SceneManager.LoadScene("Ganaste");
+                Debug.Log("Mataste a saturno");
 
             }
         }
