@@ -15,8 +15,8 @@ public class DestruirMonstruo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(Tecla) && transform.position.z < 10 && SceneManager.GetActiveScene().name == "level1" 
-            || Input.GetKeyDown(Tecla) && transform.position.z < 10 && SceneManager.GetActiveScene().name == "Level2")
+        if (Input.GetKeyDown(Tecla) && transform.position.z < 5 && SceneManager.GetActiveScene().name == "level1" 
+            || Input.GetKeyDown(Tecla) && transform.position.z < 5 && SceneManager.GetActiveScene().name == "Level2")
         {
             DestruirEsteMonstruo();
         }
