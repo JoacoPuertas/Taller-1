@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SpawnManager : MonoBehaviour
 {
@@ -25,9 +26,16 @@ public class SpawnManager : MonoBehaviour
 
     private void Update()
     {
+        if (TiempoDeSpawn2 < 4 && SceneManager.GetActiveScene().name == "level1" && !HasMonstruo()) {
+            SceneManager.LoadScene("Level2");        
+        }
+        if (TiempoDeSpawn2 < 4 && SceneManager.GetActiveScene().name == "level2" && !HasMonstruo())
+        {
+            SceneManager.LoadScene("Level3");
+        }
         TiempoDeSpawn2 -= Time.deltaTime;
         if (TiempoDeSpawn2 > 4) 
-        { 
+        {
             actualTime += Time.deltaTime;
             if (actualTime > tiempoDeSpawn1)
             {
@@ -50,5 +58,11 @@ public class SpawnManager : MonoBehaviour
             }
         }
         
+    }
+
+    private bool HasMonstruo()
+    {
+        GameObject[] monstruos = GameObject.FindGameObjectsWithTag("Monstruo");
+        return monstruos.Length > 0;
     }
 }

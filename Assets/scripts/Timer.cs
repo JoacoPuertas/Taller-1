@@ -38,21 +38,23 @@ public class Timer : MonoBehaviour
     {
         if (_Spawn.activeSelf || _Saturno.activeSelf)
         {
-            timer -= Time.deltaTime;
+            if (timer > 0) {
+                timer -= Time.deltaTime;
+            }
             textoTimer.text = "Tiempo: " + timer.ToString("f0");
-            if (timer < 0 && SceneManager.GetActiveScene().name == "level1")
+            if (timer < 0 && SceneManager.GetActiveScene().name == "level1" && !HasMonstruo())
             {
                 SceneManager.LoadScene("Level2");
                 // Reinicia el temporizador
                 timer = 20;
             }
-            if (timer < 0 && SceneManager.GetActiveScene().name == "Level2")
+            if (timer < 0 && SceneManager.GetActiveScene().name == "Level2" && !HasMonstruo())
             {
                 SceneManager.LoadScene("Level3");
                 // Reinicia el temporizador
                 timer = 20;
             }
-            if (timer < 0 && SceneManager.GetActiveScene().name == "Level3")
+            if (timer < 0 && SceneManager.GetActiveScene().name == "Level3" && !HasMonstruo())
             {
                 SceneManager.LoadScene("Ganaste");
                 timer = 20;
@@ -97,5 +99,10 @@ public class Timer : MonoBehaviour
             }
 
         }
+    }
+    private bool HasMonstruo()
+    {
+        GameObject[] monstruos = GameObject.FindGameObjectsWithTag("Monstruo");
+        return monstruos.Length > 0;
     }
 }
