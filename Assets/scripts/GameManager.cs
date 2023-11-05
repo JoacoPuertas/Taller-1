@@ -122,7 +122,7 @@ public class GameManager : MonoBehaviour
         {
             if (SceneManager.GetActiveScene().name == "level1")
             {
-                PlayerPrefs.SetInt(VidasPrefsName, 3);
+                PlayerPrefs.SetInt(VidasPrefsName, 5);
             }
             vidas = PlayerPrefs.GetInt("Vidas");
             HUD.Instance.UpdateVidas(vidas);
