@@ -41,7 +41,7 @@ public class Timer : MonoBehaviour
             if (timer > 0) {
                 timer -= Time.deltaTime;
             }
-            textoTimer.text = "Tiempo: " + timer.ToString("f0");
+            textoTimer.text =timer.ToString("f0");
             if (timer < 0 && SceneManager.GetActiveScene().name == "level1" && !HasMonstruo())
             {
                 SceneManager.LoadScene("Level2");
