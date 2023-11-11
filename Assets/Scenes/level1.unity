@@ -5598,8 +5598,6 @@ MonoBehaviour:
     Velocidad: 5
   - Mostro: {fileID: 4451377911565498600, guid: de91bf16b769dd440a34d89aaa5b0ca3, type: 3}
     Velocidad: 10
-  - Mostro: {fileID: 576522678539619009, guid: b261d98c343927f4683d3e91b5e4c386, type: 3}
-    Velocidad: 15
   TodosLoMostrosAereos1:
   - Mostro: {fileID: 4451377911565498600, guid: 35420189c4298b44c89f5d9a90ec223c, type: 3}
     Velocidad: 5

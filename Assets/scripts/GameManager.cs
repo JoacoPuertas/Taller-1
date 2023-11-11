@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance { get; private set; }
     public HUD hud;
-    public int vidas = 3;
+    public int vidas = 5;
     private GameState _actualGameState;
     [SerializeField] private GameObject _ventanaDePerder;
     [SerializeField] private GameObject _ventanaDeGanar;

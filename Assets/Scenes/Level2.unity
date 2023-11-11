@@ -6634,7 +6634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hud: {fileID: 1548337602}
-  vidas: 3
+  vidas: 5
   _ventanaDePerder: {fileID: 608329485}
   _ventanaDeGanar: {fileID: 1870141753}
   _inicio: {fileID: 1330122473}
@@ -8251,8 +8251,6 @@ MonoBehaviour:
     Velocidad: 15
   - Mostro: {fileID: 4451377911565498600, guid: de91bf16b769dd440a34d89aaa5b0ca3, type: 3}
     Velocidad: 20
-  - Mostro: {fileID: 576522678539619009, guid: b261d98c343927f4683d3e91b5e4c386, type: 3}
-    Velocidad: 25
   TodosLoMostrosAereos1:
   - Mostro: {fileID: 4451377911565498600, guid: 35420189c4298b44c89f5d9a90ec223c, type: 3}
     Velocidad: 20
