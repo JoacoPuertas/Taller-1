@@ -59,6 +59,7 @@ public class DestruirMonstruo : MonoBehaviour
     private void DestruirEsteMonstruo()
     {
         //animator.SetBool("muerto",true);
+        //Debug.Log(animator);
         Destroy(gameObject); // Destruye el monstruo actual
     }
 
