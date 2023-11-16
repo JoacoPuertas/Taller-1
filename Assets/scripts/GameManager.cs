@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
 
     private void OnDestroy()
     {
-        SaveData();
+        //SaveData();
     }
     private void Awake()
     {
