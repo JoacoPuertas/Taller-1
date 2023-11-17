@@ -8,10 +8,10 @@ public class DestruirMonstruo : MonoBehaviour
 {
     [SerializeField] private KeyCode Tecla;
     [SerializeField] private float SaturnoVidas = 20;
-    private Animator animator;
+    //private Animator animator;
     void Start()
     {
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
     }
 
 
@@ -21,6 +21,7 @@ public class DestruirMonstruo : MonoBehaviour
         if (Input.GetKeyDown(Tecla) && transform.position.z < 5 && SceneManager.GetActiveScene().name == "level1" 
             || Input.GetKeyDown(Tecla) && transform.position.z < 5 && SceneManager.GetActiveScene().name == "Level2")
         {
+            //animator.SetBool("muerto", true);
             DestruirEsteMonstruo();
         }
         if (SceneManager.GetActiveScene().name == "Level3" && Input.GetKeyDown(Tecla)) 
@@ -39,6 +40,7 @@ public class DestruirMonstruo : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && SceneManager.GetActiveScene().name == "level1"
             || Input.GetMouseButtonDown(0) && SceneManager.GetActiveScene().name == "Level2") // Verifica si se hizo clic con el botón izquierdo del mouse
         {
+            //animator.SetBool("Muerto", true);
             DestruirEsteMonstruo();
         }
 
