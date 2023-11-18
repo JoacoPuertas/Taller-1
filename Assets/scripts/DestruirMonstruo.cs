@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,10 +9,17 @@ public class DestruirMonstruo : MonoBehaviour
 {
     [SerializeField] private KeyCode Tecla;
     [SerializeField] private float SaturnoVidas = 20;
-    //private Animator animator;
+    private Animator animator;
+    [SerializeField] private MoverImagen2D _moverImagen;
+
     void Start()
     {
-        //animator = GetComponent<Animator>();
+        if(!gameObject.TryGetComponent<Animator>(out var anim))
+        {
+            Debug.LogWarning("NO TENGO ANIMATOR");
+            return;
+        }
+        animator = anim;
     }
 
 
@@ -60,10 +68,20 @@ public class DestruirMonstruo : MonoBehaviour
     }
     private void DestruirEsteMonstruo()
     {
-        //animator.SetBool("muerto",true);
-        //Debug.Log(animator);
-        Destroy(gameObject); // Destruye el monstruo actual
+        if (animator != null)
+        {
+            animator.SetBool("Muerto",true);
+            _moverImagen._taMuerto = true;
+            return;
+        }
+        DestruirMostro();
+
+        _moverImagen.enabled = false;
     }
 
+    public void DestruirMostro()
+    {
+        Destroy(gameObject);
+    }
     
 }

@@ -109,6 +109,14 @@ public class GameManager : MonoBehaviour
         //hud.DesactivarVida(vidas);
     }
 
+    public void SumarVida()
+    {
+        vidas += 1;
+        SaveData();
+        //hud.DesactivarVida(vidas);
+    }
+
+
     private void SaveData()
     {
         PlayerPrefs.SetInt(VidasPrefsName, vidas);

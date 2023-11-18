@@ -103,6 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Tecla: 260
   SaturnoVidas: 70
+  _moverImagen: {fileID: 378926553707318396}
 --- !u!114 &378926553707318396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,6 +119,7 @@ MonoBehaviour:
   velocidad: 5
   posY: 1
   limiteZ: -10
+  _taMuerto: 0
 --- !u!50 &-509167983086160279
 Rigidbody2D:
   serializedVersion: 4

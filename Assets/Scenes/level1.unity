@@ -9229,6 +9229,7 @@ MonoBehaviour:
   _Spawn: {fileID: 1195720405}
   _Oleada2: {fileID: 1392869796}
   _Saturno: {fileID: 1114254313}
+  _corazoncito: {fileID: 2644913822322071183, guid: 3833f7319b233ad46a654be20bb74965, type: 3}
   timer: 20
   textoTimer: {fileID: 1936821233}
   OleadaTimer: 3
