@@ -3601,6 +3601,7 @@ MonoBehaviour:
   velocidad: 25
   posY: 1
   limiteZ: -10
+  _taMuerto: 0
 --- !u!4 &818656811
 Transform:
   m_ObjectHideFlags: 0
@@ -5603,7 +5604,7 @@ MonoBehaviour:
     Velocidad: 5
   - Mostro: {fileID: 4451377911565498600, guid: 6d5645f73feb1b94a992cc1c60579b28, type: 3}
     Velocidad: 10
-  tiempoDeSpawn1: 0.78
+  tiempoDeSpawn1: 1.27
 --- !u!4 &1195720407
 Transform:
   m_ObjectHideFlags: 0
@@ -6593,6 +6594,7 @@ MonoBehaviour:
   velocidad: 15
   posY: 1
   limiteZ: -10
+  _taMuerto: 0
 --- !u!1 &1392869796
 GameObject:
   m_ObjectHideFlags: 0
@@ -9636,6 +9638,7 @@ MonoBehaviour:
   velocidad: 30
   posY: 1
   limiteZ: -10
+  _taMuerto: 0
 --- !u!4 &2039672872
 Transform:
   m_ObjectHideFlags: 0

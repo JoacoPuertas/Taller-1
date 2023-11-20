@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SaturnoComportamiento : MonoBehaviour
 {
@@ -12,15 +13,22 @@ public class SaturnoComportamiento : MonoBehaviour
 
     public void MePegaron()
     {
-        if(_puntosDebilesCount >= _puntosDebiles.Length)
+        if (_puntosDebilesCount == _puntosDebiles.Length - 1)
         {
-            Destroy(gameObject);
+            Debug.Log("Cargando la escena Ganaste");
+            SceneManager.LoadScene("Ganaste");
+            return;
         }
 
         _puntosDebiles[_puntosDebilesCount].SetActive(false);
         _puntosDebilesCount++;
-        _puntosDebiles[_puntosDebilesCount].SetActive(true);
+
+        if (_puntosDebilesCount < _puntosDebiles.Length)
+        {
+            _puntosDebiles[_puntosDebilesCount].SetActive(true);
+        }
     }
+
 
 
 }

@@ -3583,6 +3583,7 @@ MonoBehaviour:
   velocidad: 15
   posY: 1
   limiteZ: -10
+  _taMuerto: 0
 --- !u!1 &976689194
 GameObject:
   m_ObjectHideFlags: 0
@@ -5861,6 +5862,7 @@ MonoBehaviour:
   _Spawn: {fileID: 562621662}
   _Oleada2: {fileID: 1141892336}
   _Saturno: {fileID: 1514797806}
+  _corazoncito: {fileID: 0}
   timer: 20
   textoTimer: {fileID: 1504038013}
   OleadaTimer: 3

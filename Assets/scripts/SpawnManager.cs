@@ -45,8 +45,8 @@ public class SpawnManager : MonoBehaviour
                 float posicionTerrestreRandom = UnityEngine.Random.Range(-4f, 4f);
                 float posicionAereoRandom = UnityEngine.Random.Range(-4f, 4f);
 
-                Vector3 posTerrestre = new Vector3(posicionTerrestreRandom, transform.position.y, transform.position.z);
-                Vector3 posAereo = new Vector3(posicionAereoRandom, transform.position.y + 5f, transform.position.z);
+                Vector3 posTerrestre = new Vector3(posicionTerrestreRandom, 0.5f, transform.position.z);
+                Vector3 posAereo = new Vector3(posicionAereoRandom, 0.5f + 5f, transform.position.z);
 
                 GameObject terrestreSpawned = Instantiate(TodosLoMostrosTerrestres1[terrestreRandom].Mostro, posTerrestre, Quaternion.identity);
                 GameObject aereoSpawned = Instantiate(TodosLoMostrosAereos1[aereoRandom].Mostro, posAereo, Quaternion.identity);

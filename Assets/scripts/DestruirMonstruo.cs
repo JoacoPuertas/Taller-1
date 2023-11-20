@@ -8,6 +8,7 @@ public class DestruirMonstruo : MonoBehaviour
 
 {
     [SerializeField] private KeyCode Tecla;
+    [SerializeField] private KeyCode TeclaDisparo;
     [SerializeField] private float SaturnoVidas = 20;
     private Animator animator;
     [SerializeField] private MoverImagen2D _moverImagen;
@@ -42,17 +43,16 @@ public class DestruirMonstruo : MonoBehaviour
             }
         }
     }
-
     private void OnMouseOver()
     {
-        if (Input.GetMouseButtonDown(0) && SceneManager.GetActiveScene().name == "level1"
-            || Input.GetMouseButtonDown(0) && SceneManager.GetActiveScene().name == "Level2") // Verifica si se hizo clic con el botón izquierdo del mouse
+        if (Input.GetKeyDown(TeclaDisparo) && SceneManager.GetActiveScene().name == "level1"
+            || Input.GetKeyDown(TeclaDisparo) && SceneManager.GetActiveScene().name == "Level2") // Verifica si se hizo clic con el botón izquierdo del mouse
         {
             //animator.SetBool("Muerto", true);
             DestruirEsteMonstruo();
         }
 
-        if (SceneManager.GetActiveScene().name == "Level3" && Input.GetMouseButtonDown(0))
+        if (SceneManager.GetActiveScene().name == "Level3" && Input.GetKeyDown(TeclaDisparo))
         {
             SaturnoVidas--;
             if (SaturnoVidas <= 0)
@@ -76,7 +76,7 @@ public class DestruirMonstruo : MonoBehaviour
         }
         DestruirMostro();
 
-        _moverImagen.enabled = false;
+        //_moverImagen.enabled = false;
     }
 
     public void DestruirMostro()

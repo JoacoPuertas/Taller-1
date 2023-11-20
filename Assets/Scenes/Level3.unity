@@ -2077,6 +2077,7 @@ MonoBehaviour:
   velocidad: 15
   posY: 1
   limiteZ: -10
+  _taMuerto: 0
 --- !u!1001 &638676826
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4934,6 +4935,7 @@ MonoBehaviour:
   _Spawn: {fileID: 1001139258}
   _Oleada2: {fileID: 1538030209}
   _Saturno: {fileID: 2085489556}
+  _corazoncito: {fileID: 0}
   timer: 20
   textoTimer: {fileID: 1225030079}
   OleadaTimer: 3
@@ -8486,6 +8488,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2085489557}
     m_Modifications:
+    - target: {fileID: 87878311449325512, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: Tecla
+      value: 273
+      objectReference: {fileID: 0}
+    - target: {fileID: 87878311449325512, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: isTerrestre
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 87878311449325512, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: TeclaDisparo
+      value: 259
+      objectReference: {fileID: 0}
     - target: {fileID: 295244154195823242, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
       propertyPath: m_Name
       value: Saturno
@@ -8493,6 +8507,14 @@ PrefabInstance:
     - target: {fileID: 295244154195823242, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
       propertyPath: m_TagString
       value: Saturno
+      objectReference: {fileID: 0}
+    - target: {fileID: 597652568249240113, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: Tecla
+      value: 275
+      objectReference: {fileID: 0}
+    - target: {fileID: 597652568249240113, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: isTerrestre
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4324035880664723129, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8533,6 +8555,30 @@ PrefabInstance:
     - target: {fileID: 4324035880664723129, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7041045695747795841, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: Tecla
+      value: 274
+      objectReference: {fileID: 0}
+    - target: {fileID: 7041045695747795841, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: isTerrestre
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833296039525693069, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: Tecla
+      value: 276
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833296039525693069, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: isTerrestre
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418364158965933747, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: m_Size.x
+      value: 9.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418364158965933747, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: m_Size.y
+      value: 9.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
