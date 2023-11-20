@@ -111,6 +111,7 @@ public class GameManager : MonoBehaviour
 
     public void SumarVida()
     {
+        Debug.Log("Vida sumada. Vidas actuales: " + vidas);
         vidas += 1;
         SaveData();
         //hud.DesactivarVida(vidas);

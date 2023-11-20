@@ -56,7 +56,8 @@ public class Timer : MonoBehaviour
 
             if (timer < 15 && _heartSpawned && estaEscena == "Level2")
             {
-                Instantiate(_corazoncito);
+                //Instantiate(_corazoncito);
+                _corazoncito.SetActive(true);
                 _heartSpawned = false;
             }
 
