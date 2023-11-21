@@ -35,9 +35,10 @@ public class HUD : MonoBehaviour
         }
     }
 
-    public void ActivasVida(int indice)
+    public void ActivasVida()
     {
-        vidas[indice].SetActive(true);
+        Debug.Log("Activas Vida tambien" + vidas.Count);
+        vidas[vidas.Count].SetActive(true);
     }
 
     public void ActivarRasguño() {

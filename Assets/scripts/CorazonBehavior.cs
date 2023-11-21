@@ -36,7 +36,8 @@ public class CorazonBehavior : MonoBehaviour
     //cuando el corazon muera
     private void SumarVida2()
     {
-        Debug.Log("cande pelotuda");
+        Debug.Log("SumarVida2 se ejecuta");
+        HUD.Instance.ActivasVida();
         GameManager.Instance.SumarVida();
         Destroy(gameObject);
     }

@@ -12,6 +12,7 @@ public class Timer : MonoBehaviour
     [SerializeField] private GameObject _corazoncito;
     public float timer = 20;
     public Text textoTimer;
+    public Text textoTimerOleada;
     public float OleadaTimer = 3;
     public float CinematicaTimer = 20;
     private bool _heartSpawned = true;
@@ -80,6 +81,7 @@ public class Timer : MonoBehaviour
         {
             {
                 OleadaTimer -= Time.deltaTime;
+                textoTimerOleada.text = OleadaTimer.ToString("f2");
                 if (OleadaTimer <= 0)
                 {
                     // Desactiva _Oleada2 y activa _Spawn cuando OleadaTimer llega a 0.
@@ -94,6 +96,7 @@ public class Timer : MonoBehaviour
         {
             {
                 OleadaTimer -= Time.deltaTime;
+                textoTimerOleada.text = OleadaTimer.ToString("f2");
                 if (OleadaTimer <= 0)
                 {
                     // Desactiva _Oleada2 y activa _Spawn cuando OleadaTimer llega a 0.
