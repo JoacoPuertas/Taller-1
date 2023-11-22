@@ -25,6 +25,8 @@ public class GameManager : MonoBehaviour
         _actualGameState = GameState.Inicio;
         UpdateGameState();
         Reiniciar();
+        LoadData();
+       // hud.iteratorVidas = vidas-1;
     }
 
     public void Reiniciar() {
@@ -100,13 +102,16 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         LoadData();
+       // hud.iteratorVidas = vidas - 1;
     }
 
     public void PerderVida()
     {
         vidas -= 1;
         SaveData();
-        //hud.DesactivarVida(vidas);
+        hud.DesactivarVida(vidas);
+        if(vidas==0)
+        ChangeActualScene(GameState.Perder);
     }
 
     public void SumarVida()
@@ -114,7 +119,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("Vida sumada. Vidas actuales: " + vidas);
         vidas += 1;
         SaveData();
-        //hud.DesactivarVida(vidas);
+        hud.ActivarVidas(vidas);
     }
 
 
@@ -134,6 +139,7 @@ public class GameManager : MonoBehaviour
                 PlayerPrefs.SetInt(VidasPrefsName, 5);
             }
             vidas = PlayerPrefs.GetInt("Vidas");
+            Debug.Log("Vidas"+ vidas);
             HUD.Instance.UpdateVidas(vidas);
         }
     }

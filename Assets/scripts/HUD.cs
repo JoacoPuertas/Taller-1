@@ -8,37 +8,39 @@ using UnityEngine;
 public class HUD : MonoBehaviour
 {
     public static HUD Instance { get; private set; }
-    public List<GameObject> vidas;
+    public List<GameObject> vidasGo;
     public GameObject rasguño;
     private void Awake()
     {
         Instance = this;
     }
-    public void DesactivarVida() {
-        if (vidas.Count == 1)
+    public void DesactivarVida(int vidas) {
+
+        for (int i = 4; i >= vidas; i--)
         {
-            GameManager.Instance.ChangeActualScene(GameState.Perder);
-            return;
+            vidasGo[i].SetActive(false);
         }
-        vidas[vidas.Count-1].SetActive(false);
-        vidas.RemoveAt(vidas.Count-1);
-        
-        
+
     }
 
-    public void UpdateVidas(int vidasToDelete)
+    public void UpdateVidas(int vidas)
     {
-        for (int i = vidas.Count; i > vidasToDelete; i--) 
+
+        for (int i = 5; i > vidas; i--)
         {
-            vidas[vidas.Count - 1].SetActive(false);
-            vidas.RemoveAt(vidas.Count - 1);
+            Debug.Log(i-1);
+            Debug.Log(vidasGo.Count);
+            vidasGo[i-1].SetActive(false);
         }
     }
 
-    public void ActivasVida()
+    public void ActivarVidas(int vidas)
     {
-        Debug.Log("Activas Vida tambien" + vidas.Count);
-        vidas[vidas.Count].SetActive(true);
+        for (int i = 0; i < vidas; i++)
+        {
+            if (!vidasGo[i].activeInHierarchy)
+                vidasGo[i].SetActive(true);
+        }
     }
 
     public void ActivarRasguño() {

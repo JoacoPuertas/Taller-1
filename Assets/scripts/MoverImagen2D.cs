@@ -24,7 +24,7 @@ public class MoverImagen2D : MonoBehaviour
         {
             Destroy(gameObject); // Destruye la imagen en lugar de reiniciar su posición
             //aca resta una vida
-            HUD.Instance.DesactivarVida();
+            //HUD.Instance.DesactivarVida();
             GameManager.Instance.PerderVida();
             HUD.Instance.ActivarRasguño();
 

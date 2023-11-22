@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PuntoDebil : MonoBehaviour
 {
 
+    [SerializeField] private bool OnlyParent;
     [SerializeField] private bool isTerrestre;
     [SerializeField] private KeyCode Tecla;
     [SerializeField] private KeyCode TeclaDisparo;
@@ -13,6 +14,7 @@ public class PuntoDebil : MonoBehaviour
 
     private void Update()
     {
+        if (OnlyParent) { return; }
         if (isTerrestre)
         {
             if (Input.GetKeyDown(Tecla))
@@ -23,7 +25,8 @@ public class PuntoDebil : MonoBehaviour
     }
     private void OnMouseOver()
     {
-        //if (isTerrestre) { return; }
+        if (OnlyParent) { return; }
+        if (isTerrestre) { return; }
         if (Input.GetKeyDown(TeclaDisparo))
         {
             AvisarASAturno();

@@ -4954,13 +4954,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4286968c0a4fae84bba0ef5e4be9b7fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidas:
+  vidasGo:
   - {fileID: 730555477}
   - {fileID: 1913079033}
   - {fileID: 430936853}
   - {fileID: 987812082}
   - {fileID: 1096543739}
   "rasgu\xF1o": {fileID: 760151360}
+  iteratorVidas: 0
 --- !u!114 &927847177
 MonoBehaviour:
   m_ObjectHideFlags: 0

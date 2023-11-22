@@ -37,7 +37,6 @@ public class CorazonBehavior : MonoBehaviour
     private void SumarVida2()
     {
         Debug.Log("SumarVida2 se ejecuta");
-        HUD.Instance.ActivasVida();
         GameManager.Instance.SumarVida();
         Destroy(gameObject);
     }

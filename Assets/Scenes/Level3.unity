@@ -8098,7 +8098,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4286968c0a4fae84bba0ef5e4be9b7fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidas:
+  vidasGo:
   - {fileID: 94775372}
   - {fileID: 567952988}
   - {fileID: 1315069466}
