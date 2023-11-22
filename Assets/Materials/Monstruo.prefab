@@ -101,8 +101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 537cff42bc5eee54bb1ecd0148e7781f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tecla: 260
-  TeclaDisparo: 259
+  Tecla: 258
+  TeclaDisparo: 112
   SaturnoVidas: 70
   _moverImagen: {fileID: 378926553707318396}
 --- !u!114 &378926553707318396

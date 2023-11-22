@@ -27,7 +27,7 @@ public class PuntoDebil : MonoBehaviour
     {
         if (OnlyParent) { return; }
         if (isTerrestre) { return; }
-        if (Input.GetKeyDown(TeclaDisparo))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             AvisarASAturno();
         }

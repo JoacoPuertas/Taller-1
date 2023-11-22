@@ -9,6 +9,7 @@ public class HUD : MonoBehaviour
 {
     public static HUD Instance { get; private set; }
     public List<GameObject> vidasGo;
+    public List<GameObject> vidasSa;
     public GameObject rasguño;
     private void Awake()
     {
@@ -19,6 +20,16 @@ public class HUD : MonoBehaviour
         for (int i = 4; i >= vidas; i--)
         {
             vidasGo[i].SetActive(false);
+        }
+
+    }
+
+    public void DesactivarVidaSaturno(int vidasSaturno)
+    {
+
+        for (int i = 7; i >= vidasSaturno; i--)
+        {
+            vidasSa[i].SetActive(false);
         }
 
     }

@@ -11,9 +11,11 @@ public class SaturnoComportamiento : MonoBehaviour
 
 
 
+
     public void MePegaron()
     {
         //bajar barrita
+        GameManager.Instance.PerderVidaSaturno();
         if (_puntosDebilesCount == _puntosDebiles.Length - 1)
         {
             Debug.Log("Cargando la escena Ganaste");

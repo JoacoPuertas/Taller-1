@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Tecla: 0
-  TeclaDisparo: 259
+  TeclaDisparo: 112
   SaturnoVidas: 20
   _moverImagen: {fileID: -2345301387139081995}
 --- !u!61 &1729801068619826996

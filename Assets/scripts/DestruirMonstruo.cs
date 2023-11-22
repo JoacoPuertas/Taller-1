@@ -45,8 +45,8 @@ public class DestruirMonstruo : MonoBehaviour
     }
     private void OnMouseOver()
     {
-        if (Input.GetKeyDown(TeclaDisparo) && SceneManager.GetActiveScene().name == "level1"
-            || Input.GetKeyDown(TeclaDisparo) && SceneManager.GetActiveScene().name == "Level2") // Verifica si se hizo clic con el botón izquierdo del mouse
+        if (Input.GetKeyDown(KeyCode.P) && SceneManager.GetActiveScene().name == "level1"
+            || Input.GetKeyDown(KeyCode.P) && SceneManager.GetActiveScene().name == "Level2") // Verifica si se hizo clic con el botón izquierdo del mouse
         {
             //animator.SetBool("Muerto", true);
             DestruirEsteMonstruo();
@@ -57,9 +57,7 @@ public class DestruirMonstruo : MonoBehaviour
             SaturnoVidas--;
             if (SaturnoVidas <= 0)
             {
-                SceneManager.LoadScene("Ganaste");
                 DestruirEsteMonstruo();
-                SceneManager.LoadScene("Ganaste");
                 Debug.Log("Mataste a saturno");
 
             }
@@ -83,5 +81,14 @@ public class DestruirMonstruo : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    public void DestruirSaturno()
+    {
+        Destroy(gameObject);
+        SceneManager.LoadScene("Ganaste");
+    }
+
+
+    
     
 }

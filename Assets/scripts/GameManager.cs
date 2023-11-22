@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     public HUD hud;
     public int vidas = 5;
+    public int vidasSaturno = 8;
     private GameState _actualGameState;
     [SerializeField] private GameObject _ventanaDePerder;
     [SerializeField] private GameObject _ventanaDeGanar;
@@ -111,15 +112,33 @@ public class GameManager : MonoBehaviour
         SaveData();
         hud.DesactivarVida(vidas);
         if(vidas==0)
-        ChangeActualScene(GameState.Perder);
+        ChangeActualScene(GameState.Perder); 
     }
 
+    public void PerderVidaSaturno()
+    {
+        vidasSaturno -= 1;
+        //SaveData();
+        hud.DesactivarVidaSaturno(vidasSaturno);
+        if (vidas == 0)
+            ChangeActualScene(GameState.Ganar);
+    }
+
+    //hud.DesactivarVidaSaturno();
     public void SumarVida()
     {
         Debug.Log("Vida sumada. Vidas actuales: " + vidas);
         vidas += 1;
         SaveData();
         hud.ActivarVidas(vidas);
+    }
+
+    public void RestarVidaSaturno()
+    {
+        Debug.Log("Vida sumada. Vidas actuales: " + vidasSaturno);
+        vidasSaturno += 1;
+        //SaveData();
+        //hud.ActivarVidas(vidas);
     }
 
 

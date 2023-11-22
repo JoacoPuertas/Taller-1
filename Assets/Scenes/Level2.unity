@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07bda60de689872408eace843d9b8db6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TeclaDisparo: 259
+  TeclaDisparo: 112
 --- !u!212 &50049822
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8542,6 +8542,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hud: {fileID: 1548337602}
   vidas: 5
+  vidasSaturno: 8
   _ventanaDePerder: {fileID: 608329485}
   _ventanaDeGanar: {fileID: 1870141753}
   _inicio: {fileID: 1330122473}
@@ -9037,6 +9038,7 @@ MonoBehaviour:
   - {fileID: 1947748345}
   - {fileID: 592814376}
   - {fileID: 2147204783}
+  vidasSa: []
   "rasgu\xF1o": {fileID: 317959575}
 --- !u!114 &1548337603
 MonoBehaviour:
