@@ -913,6 +913,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hud: {fileID: 1325381908}
   vidas: 3
+  vidasSaturno: 8
   _ventanaDePerder: {fileID: 2098966281}
   _ventanaDeGanar: {fileID: 1189971074}
   _inicio: {fileID: 1083610585}
@@ -2608,6 +2609,7 @@ MonoBehaviour:
   velocidad: 15
   posY: 1
   limiteZ: -10
+  _taMuerto: 0
 --- !u!1 &579021163
 GameObject:
   m_ObjectHideFlags: 0
@@ -4688,8 +4690,10 @@ MonoBehaviour:
   _Spawn: {fileID: 245859845}
   _Oleada2: {fileID: 1807498330}
   _Saturno: {fileID: 840399800}
+  _corazoncito: {fileID: 0}
   timer: 20
   textoTimer: {fileID: 1222523665}
+  textoTimerOleada: {fileID: 0}
   OleadaTimer: 3
   CinematicaTimer: 20
 --- !u!114 &1222523665
@@ -5257,10 +5261,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4286968c0a4fae84bba0ef5e4be9b7fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidas:
-  - {fileID: 250252672}
-  - {fileID: 1039043599}
-  - {fileID: 1937438131}
+  vidasGo: []
+  vidasSa: []
   "rasgu\xF1o": {fileID: 0}
 --- !u!114 &1325381909
 MonoBehaviour:
@@ -6660,7 +6662,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1764530754}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 18925fe2824588e4fbd368bd8d7cd9e5, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 890d01738e220cb4a95133cf943b59f1, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -6674,14 +6676,12 @@ VideoPlayer:
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
-  m_TargetAudioSources:
-  - {fileID: 0}
-  m_DirectAudioVolumes:
-  - 1
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
   m_Url: 
-  m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
-  m_ControlledAudioTrackCount: 1
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
   m_Looping: 0
