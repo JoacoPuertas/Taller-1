@@ -6717,7 +6717,7 @@ MonoBehaviour:
     Velocidad: 5
   - Mostro: {fileID: 4451377911565498600, guid: 6d5645f73feb1b94a992cc1c60579b28, type: 3}
     Velocidad: 10
-  tiempoDeSpawn1: 1.27
+  tiempoDeSpawn1: 2.19
 --- !u!4 &1195720407
 Transform:
   m_ObjectHideFlags: 0
