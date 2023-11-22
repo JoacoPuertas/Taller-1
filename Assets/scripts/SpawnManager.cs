@@ -42,8 +42,8 @@ public class SpawnManager : MonoBehaviour
                 int terrestreRandom = UnityEngine.Random.Range(0, TodosLoMostrosTerrestres1.Count);
                 int aereoRandom = UnityEngine.Random.Range(0, TodosLoMostrosAereos1.Count);
 
-                float posicionTerrestreRandom = UnityEngine.Random.Range(-2.75f, 2.75f);
-                float posicionAereoRandom = UnityEngine.Random.Range(-2.75f, 2.75f);
+                float posicionTerrestreRandom = UnityEngine.Random.Range(-3f, 2.75f);
+                float posicionAereoRandom = UnityEngine.Random.Range(-3f, 2.75f);
 
                 Vector3 posTerrestre = new Vector3(posicionTerrestreRandom, 0.5f, transform.position.z);
                 Vector3 posAereo = new Vector3(posicionAereoRandom, 0.5f + 4f, transform.position.z);
