@@ -14,7 +14,7 @@ public class Timer : MonoBehaviour
     public Text textoTimer;
     public Text textoTimerOleada;
     public float OleadaTimer = 3;
-    public float CinematicaTimer = 20;
+    public float CinematicaTimer = 15;
     private bool _heartSpawned = true;
 
     private string estaEscena;

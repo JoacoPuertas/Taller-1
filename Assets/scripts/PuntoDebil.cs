@@ -7,6 +7,7 @@ public class PuntoDebil : MonoBehaviour
 {
 
     [SerializeField] private bool OnlyParent;
+    [SerializeField] private bool Ultimo;
     [SerializeField] private bool isTerrestre;
     [SerializeField] private KeyCode Tecla;
     [SerializeField] private KeyCode TeclaDisparo;
@@ -21,6 +22,10 @@ public class PuntoDebil : MonoBehaviour
             {
                 AvisarASAturno();
             }
+        }
+
+        if (Ultimo) {
+            AvisarASAturno();
         }
     }
     private void OnMouseOver()
