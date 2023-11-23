@@ -37,11 +37,20 @@ public class HUD : MonoBehaviour
     public void UpdateVidas(int vidas)
     {
 
-        for (int i = 5; i > vidas; i--)
+        for (int i = 0; i < vidasGo.Count; i++)
         {
-            Debug.Log(i-1);
-            Debug.Log(vidasGo.Count);
-            vidasGo[i-1].SetActive(false);
+            if (i < vidas)
+            {
+                // Activar las vidas restantes
+                if (!vidasGo[i].activeInHierarchy)
+                    vidasGo[i].SetActive(true);
+            }
+            else
+            {
+                // Desactivar las vidas restantes
+                if (vidasGo[i].activeInHierarchy)
+                    vidasGo[i].SetActive(false);
+            }
         }
     }
 

@@ -1,6 +1,8 @@
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Analytics;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -19,7 +21,7 @@ public class GameManager : MonoBehaviour
     private string VidasPrefsName = "Vidas";
 
 
-
+    
     //Lo tengo en el boton de perder
     public void Inicio()
     {

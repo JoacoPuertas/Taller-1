@@ -6707,9 +6707,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Spawn: {fileID: 1001139258}
-  _Oleada2: {fileID: 0}
+  _Oleada2: {fileID: 1538030209}
   _Saturno: {fileID: 2085489556}
-  _corazoncito: {fileID: 0}
+  _corazoncito: {fileID: 209847521}
   timer: 20
   textoTimer: {fileID: 1225030079}
   textoTimerOleada: {fileID: 1189526228}
@@ -6903,7 +6903,7 @@ MonoBehaviour:
   _Spawn: {fileID: 1001139258}
   _Oleada2: {fileID: 1538030209}
   _Saturno: {fileID: 2085489556}
-  _corazoncito: {fileID: 0}
+  _corazoncito: {fileID: 209847521}
   timer: 20
   textoTimer: {fileID: 1225030079}
   textoTimerOleada: {fileID: 1189526228}

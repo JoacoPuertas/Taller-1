@@ -3971,10 +3971,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb94707b0e3436a41af08cc9618fb6a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Spawn: {fileID: 0}
-  _Oleada2: {fileID: 0}
-  _Saturno: {fileID: 0}
-  _corazoncito: {fileID: 0}
+  _Spawn: {fileID: 2028890304}
+  _Oleada2: {fileID: 445733705}
+  _Saturno: {fileID: 559483370}
+  _corazoncito: {fileID: 50049820}
   timer: 20
   textoTimer: {fileID: 1522663564}
   textoTimerOleada: {fileID: 615652319}
