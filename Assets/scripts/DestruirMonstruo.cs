@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,10 +8,21 @@ public class DestruirMonstruo : MonoBehaviour
 
 {
     [SerializeField] private KeyCode Tecla;
+    [SerializeField] private KeyCode TeclaDisparo;
     [SerializeField] private float SaturnoVidas = 20;
+    private Animator animator;
+    [SerializeField] private MoverImagen2D _moverImagen;
+
     void Start()
     {
+        if(!gameObject.TryGetComponent<Animator>(out var anim))
+        {
+            Debug.LogWarning("NO TENGO ANIMATOR");
+            return;
+        }
+        animator = anim;
     }
+
 
     // Update is called once per frame
     void Update()
@@ -18,6 +30,7 @@ public class DestruirMonstruo : MonoBehaviour
         if (Input.GetKeyDown(Tecla) && transform.position.z < 5 && SceneManager.GetActiveScene().name == "level1" 
             || Input.GetKeyDown(Tecla) && transform.position.z < 5 && SceneManager.GetActiveScene().name == "Level2")
         {
+            //animator.SetBool("muerto", true);
             DestruirEsteMonstruo();
         }
         if (SceneManager.GetActiveScene().name == "Level3" && Input.GetKeyDown(Tecla)) 
@@ -30,23 +43,21 @@ public class DestruirMonstruo : MonoBehaviour
             }
         }
     }
-
     private void OnMouseOver()
     {
-        if (Input.GetMouseButtonDown(0) && SceneManager.GetActiveScene().name == "level1"
-            || Input.GetMouseButtonDown(0) && SceneManager.GetActiveScene().name == "Level2") // Verifica si se hizo clic con el botón izquierdo del mouse
+        if (Input.GetKeyDown(KeyCode.P) && SceneManager.GetActiveScene().name == "level1"
+            || Input.GetKeyDown(KeyCode.P) && SceneManager.GetActiveScene().name == "Level2") // Verifica si se hizo clic con el botón izquierdo del mouse
         {
+            //animator.SetBool("Muerto", true);
             DestruirEsteMonstruo();
         }
 
-        if (SceneManager.GetActiveScene().name == "Level3" && Input.GetMouseButtonDown(0))
+        if (SceneManager.GetActiveScene().name == "Level3" && Input.GetKeyDown(TeclaDisparo))
         {
             SaturnoVidas--;
             if (SaturnoVidas <= 0)
             {
-                SceneManager.LoadScene("Ganaste");
                 DestruirEsteMonstruo();
-                SceneManager.LoadScene("Ganaste");
                 Debug.Log("Mataste a saturno");
 
             }
@@ -55,8 +66,29 @@ public class DestruirMonstruo : MonoBehaviour
     }
     private void DestruirEsteMonstruo()
     {
-        Destroy(gameObject); // Destruye el monstruo actual
+        if (animator != null)
+        {
+            animator.SetBool("Muerto",true);
+            _moverImagen._taMuerto = true;
+            return;
+        }
+        DestruirMostro();
+
+        //_moverImagen.enabled = false;
     }
 
+    public void DestruirMostro()
+    {
+        Destroy(gameObject);
+    }
+
+    public void DestruirSaturno()
+    {
+        Destroy(gameObject);
+        SceneManager.LoadScene("Ganaste");
+    }
+
+
+    
     
 }

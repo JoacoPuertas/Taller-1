@@ -9,29 +9,35 @@ public class Timer : MonoBehaviour
     [SerializeField] private GameObject _Spawn;
     [SerializeField] private GameObject _Oleada2;
     [SerializeField] private GameObject _Saturno;
+    [SerializeField] private GameObject _corazoncito;
     public float timer = 20;
     public Text textoTimer;
+    public Text textoTimerOleada;
     public float OleadaTimer = 3;
-    public float CinematicaTimer = 20;
+    public float CinematicaTimer = 15;
+    private bool _heartSpawned = true;
+
+    private string estaEscena;
 
     void Start()
     {
-        if (SceneManager.GetActiveScene().name == "level1")
+        if (estaEscena == "level1")
         {
             // Activa _Spawn al inicio en la escena "Level1".
             _Spawn.SetActive(true);
         }
-        else if (SceneManager.GetActiveScene().name == "Level2")
+        else if (estaEscena == "Level2")
         {
             // Desactiva _Spawn al inicio en la escena "Level2".
             _Spawn.SetActive(false);
         }
-        else if (SceneManager.GetActiveScene().name == "Level3")
+        else if (estaEscena == "Level3")
         {
             // Desactiva _Spawn al inicio en la escena "Level3".
             _Spawn.SetActive(false);
         }
 
+        estaEscena = SceneManager.GetActiveScene().name;
     }
 
     void Update()
@@ -41,20 +47,29 @@ public class Timer : MonoBehaviour
             if (timer > 0) {
                 timer -= Time.deltaTime;
             }
-            textoTimer.text =timer.ToString("f2");
-            if (timer < 0 && SceneManager.GetActiveScene().name == "level1" && !HasMonstruo())
+            textoTimer.text =timer.ToString("f0");
+            if (timer < 0 && estaEscena == "level1" && !HasMonstruo())
             {
                 SceneManager.LoadScene("Level2");
                 // Reinicia el temporizador
                 timer = 20;
             }
-            if (timer < 0 && SceneManager.GetActiveScene().name == "Level2" && !HasMonstruo())
+
+            if (timer < 15 && _heartSpawned && estaEscena == "Level2")
+            {
+                //Instantiate(_corazoncito);
+                _corazoncito.SetActive(true);
+                _heartSpawned = false;
+            }
+
+
+            if (timer < 0 && estaEscena == "Level2" && !HasMonstruo())
             {
                 SceneManager.LoadScene("Level3");
                 // Reinicia el temporizador
                 timer = 20;
             }
-            if (timer < 0 && SceneManager.GetActiveScene().name == "Level3" && !HasMonstruo())
+            if (timer < 0 && estaEscena == "Level3" && !HasMonstruo())
             {
                 SceneManager.LoadScene("Ganaste");
                 timer = 20;
@@ -62,23 +77,26 @@ public class Timer : MonoBehaviour
         }
 
         // Solo disminuye OleadaTimer si estás en la escena "Level2" y no ha comenzado.
-        if (SceneManager.GetActiveScene().name == "Level2")
+        if (estaEscena == "Level2")
         {
             {
                 OleadaTimer -= Time.deltaTime;
+                textoTimerOleada.text = OleadaTimer.ToString("f2");
                 if (OleadaTimer <= 0)
                 {
                     // Desactiva _Oleada2 y activa _Spawn cuando OleadaTimer llega a 0.
                     _Oleada2.SetActive(false);
                     _Spawn.SetActive(true);
                 }
+                
             }
 
         }
-        else if (SceneManager.GetActiveScene().name == "Level3")
+        else if (estaEscena == "Level3")
         {
             {
                 OleadaTimer -= Time.deltaTime;
+                textoTimerOleada.text = OleadaTimer.ToString("f2");
                 if (OleadaTimer <= 0)
                 {
                     // Desactiva _Oleada2 y activa _Spawn cuando OleadaTimer llega a 0.
@@ -88,7 +106,7 @@ public class Timer : MonoBehaviour
             }
 
         }
-        else if (SceneManager.GetActiveScene().name == "Cinematicas")
+        else if (estaEscena == "Cinematicas")
         {
             {
                 CinematicaTimer -= Time.deltaTime;

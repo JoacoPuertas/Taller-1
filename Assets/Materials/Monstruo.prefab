@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 378926553707318396}
   - component: {fileID: -509167983086160279}
   - component: {fileID: 8476103890388221092}
+  - component: {fileID: 7601982404537689839}
   m_Layer: 0
   m_Name: Monstruo
   m_TagString: Monstruo
@@ -77,12 +78,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f9d1449787ee27e4ca2416dcad6cf879, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0b409eb298ee0d2419b641e4b09a579c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 10.5, y: 9.44}
+  m_Size: {x: 3.4433963, y: 9.905661}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -100,8 +101,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 537cff42bc5eee54bb1ecd0148e7781f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tecla: 97
+  Tecla: 258
+  TeclaDisparo: 112
   SaturnoVidas: 70
+  _moverImagen: {fileID: 378926553707318396}
 --- !u!114 &378926553707318396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,10 +120,7 @@ MonoBehaviour:
   velocidad: 5
   posY: 1
   limiteZ: -10
-  "rasgu\xF1o0": {fileID: 0}
-  "rasgu\xF1o1": {fileID: 0}
-  "rasgu\xF1o2": {fileID: 0}
-  i: 0
+  _taMuerto: 0
 --- !u!50 &-509167983086160279
 Rigidbody2D:
   serializedVersion: 4
@@ -180,16 +180,37 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -2.55457, y: 5.1028924}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10, y: 10}
-    newSize: {x: 10.5, y: 9.44}
+    pivot: {x: 1, y: 0}
+    oldSize: {x: 4.94, y: 10.12}
+    newSize: {x: 3.4433963, y: 9.905661}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4, y: 10}
+  m_Size: {x: 5.5664506, y: 10.169097}
   m_EdgeRadius: 0
+--- !u!95 &7601982404537689839
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4378083803770944096}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ca6c226a456660d4c8b2839c8598a963, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

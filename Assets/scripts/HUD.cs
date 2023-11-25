@@ -8,36 +8,59 @@ using UnityEngine;
 public class HUD : MonoBehaviour
 {
     public static HUD Instance { get; private set; }
-    public List<GameObject> vidas;
+    public List<GameObject> vidasGo;
+    public List<GameObject> vidasSa;
     public GameObject rasguño;
     private void Awake()
     {
         Instance = this;
     }
-    public void DesactivarVida() {
-        if (vidas.Count == 1)
+    public void DesactivarVida(int vidas) {
+
+        for (int i = 4; i >= vidas; i--)
         {
-            GameManager.Instance.ChangeActualScene(GameState.Perder);
-            return;
+            vidasGo[i].SetActive(false);
         }
-        vidas[vidas.Count-1].SetActive(false);
-        vidas.RemoveAt(vidas.Count-1);
-        
-        
+
     }
 
-    public void UpdateVidas(int vidasToDelete)
+    public void DesactivarVidaSaturno(int vidasSaturno)
     {
-        for (int i = vidas.Count; i > vidasToDelete; i--) 
+
+        for (int i = 7; i >= vidasSaturno; i--)
         {
-            vidas[vidas.Count - 1].SetActive(false);
-            vidas.RemoveAt(vidas.Count - 1);
+            vidasSa[i].SetActive(false);
+        }
+
+    }
+
+    public void UpdateVidas(int vidas)
+    {
+
+        for (int i = 0; i < vidasGo.Count; i++)
+        {
+            if (i < vidas)
+            {
+                // Activar las vidas restantes
+                if (!vidasGo[i].activeInHierarchy)
+                    vidasGo[i].SetActive(true);
+            }
+            else
+            {
+                // Desactivar las vidas restantes
+                if (vidasGo[i].activeInHierarchy)
+                    vidasGo[i].SetActive(false);
+            }
         }
     }
 
-    public void ActivasVida(int indice)
+    public void ActivarVidas(int vidas)
     {
-        vidas[indice].SetActive(true);
+        for (int i = 0; i < vidas; i++)
+        {
+            if (!vidasGo[i].activeInHierarchy)
+                vidasGo[i].SetActive(true);
+        }
     }
 
     public void ActivarRasguño() {
