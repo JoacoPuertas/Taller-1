@@ -26,13 +26,15 @@ public class HUD : MonoBehaviour
 
     public void DesactivarVidaSaturno(int vidasSaturno)
     {
-
-        for (int i = 7; i >= vidasSaturno; i--)
+        for (int i = vidasSa.Count - 1; i >= 0; i--)
         {
-            vidasSa[i].SetActive(false);
+            if (i >= vidasSaturno)
+            {
+                vidasSa[i].SetActive(false);
+            }
         }
-
     }
+
 
     public void UpdateVidas(int vidas)
     {

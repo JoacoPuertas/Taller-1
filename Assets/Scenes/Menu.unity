@@ -452,11 +452,11 @@ RectTransform:
   - {fileID: 1313163803}
   - {fileID: 1861086342}
   - {fileID: 1839657588}
-  - {fileID: 1283436085}
   - {fileID: 1141892337}
   - {fileID: 581693786}
   - {fileID: 807804611}
   - {fileID: 1598329850}
+  - {fileID: 1283436085}
   - {fileID: 433535988}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7038,7 +7038,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1283436085
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7070,6 +7070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3f9476c1aabf8947bd14eb7dbd36a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flashPrefab: {fileID: 4123451352702088950, guid: 228f29759ee627c47adb191b48786ec5, type: 3}
 --- !u!114 &1283436087
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -4149,7 +4149,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &908459103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4162,6 +4162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3f9476c1aabf8947bd14eb7dbd36a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flashPrefab: {fileID: 0}
 --- !u!114 &908459104
 MonoBehaviour:
   m_ObjectHideFlags: 0

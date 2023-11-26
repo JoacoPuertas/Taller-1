@@ -5,6 +5,7 @@ using UnityEngine;
 public class FollowMouse : MonoBehaviour
 {
     private RectTransform rectTransform;
+    public GameObject flashPrefab;
 
     private void Start()
     {
@@ -26,5 +27,20 @@ public class FollowMouse : MonoBehaviour
 
         // Actualiza la posición de la imagen en el Canvas
         rectTransform.localPosition = localPoint;
+
+        if (Input.GetKeyDown(KeyCode.P)) {
+            Disparar();
+        }
+    }
+
+    private void Disparar() {
+        // Obtén el componente ParticleSystem del flashPrefab
+        ParticleSystem particleSystem = flashPrefab.GetComponent<ParticleSystem>();
+
+        // Reproduce el Particle System si está presente
+        if (particleSystem != null)
+        {
+            particleSystem.Play();
+        }
     }
 }
