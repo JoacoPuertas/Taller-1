@@ -10,6 +10,7 @@ public class SaturnoComportamiento : MonoBehaviour
     private int _puntosDebilesCount=0;
     private Animator animator;
     [SerializeField] private MoverImagen2D _moverImagen;
+    [SerializeField] private MovimientoSaturno _moverImagenSaturno;
 
 
     void Start()
@@ -31,7 +32,7 @@ public class SaturnoComportamiento : MonoBehaviour
             _puntosDebiles[_puntosDebilesCount].SetActive(false);
             Debug.Log("Cargando la escena Ganaste");
             //SceneManager.LoadScene("Ganaste");
-            DestruirEsteMonstruo();
+            DestruirEsteMonstruoSaturno();
             return;
         }
 
@@ -50,6 +51,19 @@ public class SaturnoComportamiento : MonoBehaviour
         {
             animator.SetBool("Muerto", true);
             _moverImagen._taMuerto = true;
+            return;
+        }
+        DestruirMostro();
+
+        //_moverImagen.enabled = false;
+    }
+
+    private void DestruirEsteMonstruoSaturno()
+    {
+        if (animator != null)
+        {
+            animator.SetBool("Muerto", true);
+            _moverImagenSaturno._taMuerto = true;
             return;
         }
         DestruirMostro();

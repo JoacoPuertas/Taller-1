@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1073839769827854679}
   - component: {fileID: 3396446854016946660}
   - component: {fileID: 3671722537589978419}
+  - component: {fileID: 7273120732388403312}
   - component: {fileID: 8708280115683403335}
   m_Layer: 0
   m_Name: Saturno
@@ -124,6 +125,7 @@ MonoBehaviour:
   TeclaDisparo: 259
   SaturnoVidas: 20
   _moverImagen: {fileID: 3396446854016946660}
+  _moverImagenSaturno: {fileID: 7273120732388403312}
 --- !u!114 &3396446854016946660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,7 +133,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 295244154195823242}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: edde357fbe5e45547a0e2c6212840398, type: 3}
   m_Name: 
@@ -173,7 +175,26 @@ MonoBehaviour:
   - {fileID: 8600648258516762413}
   - {fileID: 169668558015263750}
   - {fileID: 3909843640212143673}
-  _moverImagen: {fileID: 3396446854016946660}
+  _moverImagen: {fileID: 7273120732388403312}
+--- !u!114 &7273120732388403312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295244154195823242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 928b226b8fa2da046808bd5e76d488c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidadX: 1
+  velocidadZ: 1
+  posY: 0
+  limiteZ: -5
+  limiteXMin: -2
+  limiteXMax: 2
+  _taMuerto: 0
 --- !u!95 &8708280115683403335
 Animator:
   serializedVersion: 5

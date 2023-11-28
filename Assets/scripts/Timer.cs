@@ -69,6 +69,11 @@ public class Timer : MonoBehaviour
                 // Reinicia el temporizador
                 timer = 20;
             }
+            if (timer < 0 && estaEscena == "Level3" && !HasMonstruo())
+            {
+                //SceneManager.LoadScene("Ganaste");
+                timer = 20;
+            }
         }
 
         // Solo disminuye OleadaTimer si estás en la escena "Level2" y no ha comenzado.

@@ -10,8 +10,10 @@ public class DestruirMonstruo : MonoBehaviour
     [SerializeField] private KeyCode Tecla;
     [SerializeField] private KeyCode TeclaDisparo;
     [SerializeField] private float SaturnoVidas = 20;
+    [SerializeField] private bool terrestre;
     private Animator animator;
     [SerializeField] private MoverImagen2D _moverImagen;
+    [SerializeField] private MovimientoSaturno _moverImagenSaturno;
 
     void Start()
     {
@@ -39,14 +41,14 @@ public class DestruirMonstruo : MonoBehaviour
             if (SaturnoVidas <= 0)
             {
                 SceneManager.LoadScene("Ganaste");
-                DestruirEsteMonstruo();
+                DestruirEsteMonstruoSaturno();
             }
         }
     }
     private void OnMouseOver()
     {
-        if (Input.GetKeyDown(KeyCode.P) && SceneManager.GetActiveScene().name == "level1"
-            || Input.GetKeyDown(KeyCode.P) && SceneManager.GetActiveScene().name == "Level2") // Verifica si se hizo clic con el botón izquierdo del mouse
+        if (Input.GetKeyDown(KeyCode.P) && SceneManager.GetActiveScene().name == "level1" && terrestre == false
+            || Input.GetKeyDown(KeyCode.P) && SceneManager.GetActiveScene().name == "Level2" && terrestre == false) // Verifica si se hizo clic con el botón izquierdo del mouse
         {
             //animator.SetBool("Muerto", true);
             DestruirEsteMonstruo();
@@ -57,7 +59,7 @@ public class DestruirMonstruo : MonoBehaviour
             SaturnoVidas--;
             if (SaturnoVidas <= 0)
             {
-                DestruirEsteMonstruo();
+                DestruirEsteMonstruoSaturno();
                 Debug.Log("Mataste a saturno");
 
             }
@@ -70,6 +72,19 @@ public class DestruirMonstruo : MonoBehaviour
         {
             animator.SetBool("Muerto",true);
             _moverImagen._taMuerto = true;
+            return;
+        }
+        DestruirMostro();
+
+        //_moverImagen.enabled = false;
+    }
+
+    private void DestruirEsteMonstruoSaturno()
+    {
+        if (animator != null)
+        {
+            animator.SetBool("Muerto", true);
+            _moverImagenSaturno._taMuerto = true;
             return;
         }
         DestruirMostro();

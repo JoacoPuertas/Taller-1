@@ -6825,12 +6825,12 @@ MonoBehaviour:
   - Mostro: {fileID: 4378083803770944096, guid: 4a227e6b38b69fa488946cd818e09dcc, type: 3}
     Velocidad: 5
   - Mostro: {fileID: 4451377911565498600, guid: de91bf16b769dd440a34d89aaa5b0ca3, type: 3}
-    Velocidad: 10
+    Velocidad: 7
   TodosLoMostrosAereos1:
   - Mostro: {fileID: 4451377911565498600, guid: 35420189c4298b44c89f5d9a90ec223c, type: 3}
     Velocidad: 5
   - Mostro: {fileID: 4451377911565498600, guid: 6d5645f73feb1b94a992cc1c60579b28, type: 3}
-    Velocidad: 10
+    Velocidad: 7
   tiempoDeSpawn1: 2.19
 --- !u!4 &1195720407
 Transform:

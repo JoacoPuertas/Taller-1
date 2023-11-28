@@ -148,7 +148,9 @@ MonoBehaviour:
   Tecla: 259
   TeclaDisparo: 112
   SaturnoVidas: 0
+  terrestre: 1
   _moverImagen: {fileID: -2345301387139081995}
+  _moverImagenSaturno: {fileID: 0}
 --- !u!114 &-2345301387139081995
 MonoBehaviour:
   m_ObjectHideFlags: 0
