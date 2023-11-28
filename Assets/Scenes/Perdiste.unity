@@ -734,7 +734,7 @@ GameObject:
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &136299946
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1802,7 +1802,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 84, y: 37}
+  m_AnchoredPosition: {x: 84, y: 361}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &340648218
@@ -4815,6 +4815,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VintageRifle
       objectReference: {fileID: 0}
+    - target: {fileID: 7050214641404146466, guid: 742f72a22d5e24c0eb6d1b58f4bdeca6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7682213458616953240, guid: 742f72a22d5e24c0eb6d1b58f4bdeca6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -958.54
@@ -5919,14 +5923,14 @@ RectTransform:
   m_GameObject: {fileID: 1432742639}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.1, y: 7.6499996, z: 0}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 7.38, y: 12.47, z: 0}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 760813800}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: -250}
+  m_AnchoredPosition: {x: 10, y: -360}
   m_SizeDelta: {x: 207.4823, y: 78.879}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1432742641
@@ -6005,7 +6009,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 929d2b8cd6c0dc04783d0235d319168b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 025a52f6ee25e6444848d1648c1054f6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6321,7 +6325,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 672, y: 456}
+  m_AnchoredPosition: {x: 672, y: 816}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1535386833
@@ -6397,7 +6401,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 692, y: 444}
+  m_AnchoredPosition: {x: 664, y: 715}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1590303020
@@ -7495,6 +7499,10 @@ PrefabInstance:
       value: Horquilla
       objectReference: {fileID: 0}
     - target: {fileID: 141034, guid: cbbdb58ceaba7dc479c2317b1770fc8c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 141034, guid: cbbdb58ceaba7dc479c2317b1770fc8c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -7604,7 +7612,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9756b2204e760594087cb46942b33eb3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 04f8a68f656125345a6853c5f2ee4dae, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
