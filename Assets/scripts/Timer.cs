@@ -24,7 +24,7 @@ public class Timer : MonoBehaviour
         if (estaEscena == "level1")
         {
             // Activa _Spawn al inicio en la escena "Level1".
-            _Spawn.SetActive(true);
+            _Spawn.SetActive(false);
         }
         else if (estaEscena == "Level2")
         {
@@ -77,7 +77,22 @@ public class Timer : MonoBehaviour
         }
 
         // Solo disminuye OleadaTimer si estás en la escena "Level2" y no ha comenzado.
-        if (estaEscena == "Level2")
+        if (estaEscena == "level1")
+        {
+            {
+                OleadaTimer -= Time.deltaTime;
+                textoTimerOleada.text = OleadaTimer.ToString("f2");
+                if (OleadaTimer <= 0)
+                {
+                    // Desactiva _Oleada2 y activa _Spawn cuando OleadaTimer llega a 0.
+                    _Oleada2.SetActive(false);
+                    _Spawn.SetActive(true);
+                }
+
+            }
+
+        }
+        else if (estaEscena == "Level2")
         {
             {
                 OleadaTimer -= Time.deltaTime;
