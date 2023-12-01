@@ -99,7 +99,7 @@ public class Timer : MonoBehaviour
         {
             {
                 OleadaTimer -= Time.deltaTime;
-                textoTimerOleada.text = OleadaTimer.ToString("f2");
+                textoTimerOleada.text = OleadaTimer.ToString("f0");
                 if (OleadaTimer <= 0)
                 {
                     // Desactiva _Oleada2 y activa _Spawn cuando OleadaTimer llega a 0.
@@ -114,7 +114,7 @@ public class Timer : MonoBehaviour
         {
             {
                 OleadaTimer -= Time.deltaTime;
-                textoTimerOleada.text = OleadaTimer.ToString("f2");
+                textoTimerOleada.text = OleadaTimer.ToString("f0");
                 if (OleadaTimer <= 0)
                 {
                     // Desactiva _Oleada2 y activa _Spawn cuando OleadaTimer llega a 0.
