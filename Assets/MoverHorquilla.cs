@@ -15,11 +15,11 @@ public class MoverHorquilla : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Keypad2))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             IniciarMovimiento();
         }
-        else if (Input.GetKeyDown(KeyCode.Keypad3))
+        else if (Input.GetKeyDown(KeyCode.Alpha7))
         {
             IniciarMovimiento();
         }

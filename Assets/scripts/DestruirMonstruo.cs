@@ -47,14 +47,14 @@ public class DestruirMonstruo : MonoBehaviour
     }
     private void OnMouseOver()
     {
-        if (Input.GetKeyDown(KeyCode.P) && SceneManager.GetActiveScene().name == "level1" && terrestre == false
-            || Input.GetKeyDown(KeyCode.P) && SceneManager.GetActiveScene().name == "Level2" && terrestre == false) // Verifica si se hizo clic con el botón izquierdo del mouse
+        if (Input.GetKeyDown(KeyCode.Alpha0) && SceneManager.GetActiveScene().name == "level1" && terrestre == false
+            || Input.GetKeyDown(KeyCode.Alpha0) && SceneManager.GetActiveScene().name == "Level2" && terrestre == false) // Verifica si se hizo clic con el botón izquierdo del mouse
         {
             //animator.SetBool("Muerto", true);
             DestruirEsteMonstruo();
         }
 
-        if (SceneManager.GetActiveScene().name == "Level3" && Input.GetKeyDown(TeclaDisparo))
+        if (SceneManager.GetActiveScene().name == "Level3" && Input.GetKeyDown(KeyCode.Alpha0))
         {
             SaturnoVidas--;
             if (SaturnoVidas <= 0)

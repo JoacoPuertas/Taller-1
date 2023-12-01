@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: "Degoyado\xB4s Compa\xF1y"
+  companyName: "Degoyado\xB4s Company"
   productName: Degoyado
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -135,7 +135,7 @@ PlayerSettings:
   vulkanEnableLateAcquireNextImage: 0
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
-  bundleVersion: 0.1
+  bundleVersion: 0.2
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -280,7 +280,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 297131b6eee66ff478012e1a59ef36a6, type: 3}
+      m_Icon: {fileID: 2800000, guid: ef89cfaa32e0aa34a809d3c230858138, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0

@@ -34,7 +34,7 @@ public class ShakeGun : MonoBehaviour
             transform.position = originalPosition;
         }
 
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.Alpha0))
         {
             // Inicia la agitación al presionar la tecla "P"
             StartShake();

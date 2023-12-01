@@ -28,7 +28,7 @@ public class FollowMouse : MonoBehaviour
         // Actualiza la posición de la imagen en el Canvas
         rectTransform.localPosition = localPoint;
 
-        if (Input.GetKeyDown(KeyCode.P)) {
+        if (Input.GetKeyDown(KeyCode.Alpha0)) {
             Disparar();
         }
     }

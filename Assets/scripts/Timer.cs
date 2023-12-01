@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class Timer : MonoBehaviour
 {
@@ -10,12 +11,14 @@ public class Timer : MonoBehaviour
     [SerializeField] private GameObject _Oleada2;
     [SerializeField] private GameObject _Saturno;
     [SerializeField] private GameObject _corazoncito;
+    [SerializeField] private GameObject _Portal;
     public float timer = 20;
     public Text textoTimer;
     public Text textoTimerOleada;
     public float OleadaTimer = 3;
     public float CinematicaTimer = 15;
     private bool _heartSpawned = true;
+    private bool Listo = true;
 
     private string estaEscena;
 
@@ -81,7 +84,7 @@ public class Timer : MonoBehaviour
         {
             {
                 OleadaTimer -= Time.deltaTime;
-                textoTimerOleada.text = OleadaTimer.ToString("f2");
+                textoTimerOleada.text = OleadaTimer.ToString("f0");
                 if (OleadaTimer <= 0)
                 {
                     // Desactiva _Oleada2 y activa _Spawn cuando OleadaTimer llega a 0.
@@ -118,6 +121,11 @@ public class Timer : MonoBehaviour
                     _Oleada2.SetActive(false);
                     _Saturno.SetActive(true);
                 }
+                if (OleadaTimer <= 0 && Listo == true)
+                {
+                    _Portal.SetActive(true);
+                    Listo = false;
+                }
             }
 
         }
@@ -137,5 +145,9 @@ public class Timer : MonoBehaviour
     {
         GameObject[] monstruos = GameObject.FindGameObjectsWithTag("Monstruo");
         return monstruos.Length > 0;
+    }
+
+    public void ApagarPortal() {
+        _Portal.SetActive(false);
     }
 }

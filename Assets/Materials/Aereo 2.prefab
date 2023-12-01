@@ -101,9 +101,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Tecla: 0
-  TeclaDisparo: 112
+  TeclaDisparo: 256
   SaturnoVidas: 20
+  terrestre: 0
   _moverImagen: {fileID: -2345301387139081995}
+  _moverImagenSaturno: {fileID: 0}
 --- !u!61 &1729801068619826996
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -7577,8 +7577,8 @@ RectTransform:
   m_GameObject: {fileID: 455326451}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 2.6666667, z: 2.6666667}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 6, y: 3.34, z: 4.000005}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1452204976}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7613,14 +7613,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2289251, g: 0.6981132, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 575c829b2bb4834408c235a8bd05775f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6ea5c87e6d5979b4e8ef6050468f093a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9315,6 +9315,125 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 695579755}
   m_CullTransparentMesh: 1
+--- !u!1 &706455883
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 706455885}
+  - component: {fileID: 706455884}
+  - component: {fileID: 706455886}
+  - component: {fileID: 706455887}
+  m_Layer: 0
+  m_Name: Portal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!212 &706455884
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706455883}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 53155694, guid: 64eaa63f9ee46584a9b59d4ba5defebe, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 8.500616, y: 8}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &706455885
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706455883}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.59, y: 3.84, z: 17.49}
+  m_LocalScale: {x: 0.76, y: 0.76, z: 0.76}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &706455886
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706455883}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fa2491f19ce5ab24fafeee01a2a2b400, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &706455887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706455883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 003a49cc7fe9fe34db23d86e2e3af339, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &718127614
 GameObject:
   m_ObjectHideFlags: 0
@@ -12208,7 +12327,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: -362}
+  m_AnchoredPosition: {x: 0, y: -312}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1189526227
@@ -12227,6 +12346,7 @@ MonoBehaviour:
   _Oleada2: {fileID: 1538030209}
   _Saturno: {fileID: 2085489556}
   _corazoncito: {fileID: 209847521}
+  _Portal: {fileID: 706455883}
   timer: 20
   textoTimer: {fileID: 1225030079}
   textoTimerOleada: {fileID: 1189526228}
@@ -12501,6 +12621,7 @@ MonoBehaviour:
   _Oleada2: {fileID: 1538030209}
   _Saturno: {fileID: 2085489556}
   _corazoncito: {fileID: 209847521}
+  _Portal: {fileID: 706455883}
   timer: 20
   textoTimer: {fileID: 1225030079}
   textoTimerOleada: {fileID: 1189526228}
@@ -15356,7 +15477,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3a011f1e478a22f4a830c403dc208dba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 96183ebbbe7fc5b418ed615f5f48318b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -18283,7 +18404,7 @@ Transform:
   m_GameObject: {fileID: 2085489556}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: -0.4, z: 30}
+  m_LocalPosition: {x: -1.92, y: -0.4, z: 10.51}
   m_LocalScale: {x: 1.51, y: 1.51, z: 1.51}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -18768,7 +18889,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 87878311449325512, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
       propertyPath: TeclaDisparo
-      value: 259
+      value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 295244154195823242, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
       propertyPath: m_Name
@@ -18780,20 +18901,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 597652568249240113, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
       propertyPath: Tecla
-      value: 258
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 597652568249240113, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
       propertyPath: isTerrestre
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1053182741483389878, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: Tecla
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178118543671258779, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: TeclaDisparo
+      value: 256
+      objectReference: {fileID: 0}
     - target: {fileID: 2011185877362656670, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
       propertyPath: TeclaDisparo
-      value: 112
+      value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 2539230989756979640, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
       propertyPath: m_Name
       value: PuntoDebil-7
       objectReference: {fileID: 0}
+    - target: {fileID: 2740322699335325395, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 098ded66bbc158c41b858589bfd5cfb2, type: 3}
     - target: {fileID: 3084144814864406179, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
       propertyPath: m_Name
       value: PuntoDebil-3
@@ -18808,7 +18941,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3396446854016946660, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
       propertyPath: velocidad
-      value: 1
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3671722537589978419, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
       propertyPath: _moverImagen
@@ -18886,13 +19019,21 @@ PrefabInstance:
       propertyPath: _puntosDebiles.Array.data[19]
       value: 
       objectReference: {fileID: 1728574057}
+    - target: {fileID: 3877701418648259860, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: Tecla
+      value: 102
+      objectReference: {fileID: 0}
     - target: {fileID: 3940251623433455467, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
       propertyPath: Tecla
-      value: 259
+      value: 102
       objectReference: {fileID: 0}
     - target: {fileID: 3940251623433455467, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
       propertyPath: TeclaDisparo
       value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 3949738958310936269, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: Tecla
+      value: 259
       objectReference: {fileID: 0}
     - target: {fileID: 4324035880664723129, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
       propertyPath: m_LocalScale.x
@@ -18904,7 +19045,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4324035880664723129, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.32
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 4324035880664723129, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18942,6 +19083,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4670567372199462463, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: Tecla
+      value: 259
+      objectReference: {fileID: 0}
+    - target: {fileID: 4846621673606532624, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 26.443882
+      objectReference: {fileID: 0}
+    - target: {fileID: 4846621673606532624, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 19.82
+      objectReference: {fileID: 0}
     - target: {fileID: 4878467376155336177, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
       propertyPath: m_Name
       value: PuntoDebil-5
@@ -18949,6 +19102,10 @@ PrefabInstance:
     - target: {fileID: 5386500011782535176, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
       propertyPath: m_Name
       value: PuntoDebil-8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6082165750156420097, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: Tecla
+      value: 102
       objectReference: {fileID: 0}
     - target: {fileID: 6440941343392675751, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
       propertyPath: m_Name
@@ -18966,13 +19123,37 @@ PrefabInstance:
       propertyPath: isTerrestre
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7041045695747795841, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: TeclaDisparo
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 7273120732388403312, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: velocidadX
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7273120732388403312, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: velocidadZ
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7513954431577941146, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: Tecla
+      value: 55
+      objectReference: {fileID: 0}
     - target: {fileID: 7795085059973616633, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
       propertyPath: Tecla
       value: 258
       objectReference: {fileID: 0}
-    - target: {fileID: 7833296039525693069, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+    - target: {fileID: 7795085059973616633, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: TeclaDisparo
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 7819826205033743574, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
       propertyPath: Tecla
       value: 259
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833296039525693069, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: Tecla
+      value: 102
       objectReference: {fileID: 0}
     - target: {fileID: 7833296039525693069, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
       propertyPath: isTerrestre
@@ -18982,6 +19163,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PuntoDebil-2
       objectReference: {fileID: 0}
+    - target: {fileID: 8406310504455290696, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: Tecla
+      value: 102
+      objectReference: {fileID: 0}
+    - target: {fileID: 8415388167911099392, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: Tecla
+      value: 55
+      objectReference: {fileID: 0}
     - target: {fileID: 8418364158965933747, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
       propertyPath: m_Size.x
       value: 9.13
@@ -18990,6 +19179,22 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 9.4
       objectReference: {fileID: 0}
+    - target: {fileID: 8692116266019734920, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: Tecla
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 8692116266019734920, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: isTerrestre
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8714444108851508514, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8771703645fc0f3449840e3b7b8a3cc8, type: 3}
+    - target: {fileID: 8943150772168501045, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 098ded66bbc158c41b858589bfd5cfb2, type: 3}
     - target: {fileID: 9147049106390286507, guid: b49ea147ae4bdf846a19d00a3076dc82, type: 3}
       propertyPath: OnlyParent
       value: 0
@@ -19010,10 +19215,11 @@ SceneRoots:
   m_Roots:
   - {fileID: 1001139260}
   - {fileID: 338797105}
+  - {fileID: 2085489557}
   - {fileID: 1666374800}
   - {fileID: 1685973478}
   - {fileID: 1452204976}
   - {fileID: 209847524}
   - {fileID: 969154377}
-  - {fileID: 2085489557}
   - {fileID: 332866194}
+  - {fileID: 706455885}

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 303e0c86a43babe4b9df497299a20a83
+guid: 64eaa63f9ee46584a9b59d4ba5defebe
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -21,7 +21,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 1
+  isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -123,169 +123,190 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Muerto-Saturno_0
+      name: animacion portal_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 664
-        height: 1001
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        y: 1247
+        width: 850
+        height: 800
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6956162613cadfc469c168a874d57f42
-      internalID: 502835894
+      spriteID: e9b6f389be5993f4cbba2444f5a3e9cf
+      internalID: 53155694
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Muerto-Saturno_1
+      name: animacion portal_1
       rect:
         serializedVersion: 2
-        x: 779
-        y: 14
-        width: 666
-        height: 982
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1125
+        y: 1247
+        width: 851
+        height: 801
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08640f8c69c3166448f51bd3c0f0d5b5
-      internalID: -232648482
+      spriteID: c15aac991cc3e5b40a88f69e23aad6a7
+      internalID: 1142843239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Muerto-Saturno_2
+      name: animacion portal_2
       rect:
         serializedVersion: 2
-        x: 1554
-        y: 19
-        width: 666
-        height: 980
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 2083
+        y: 1285
+        width: 786
+        height: 706
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 915d00f9b20cc734a8082e3660a0c32c
-      internalID: 1203075050
+      spriteID: a803fc2c4c819214baee7af37ef1d5ba
+      internalID: 1062974726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Muerto-Saturno_3
+      name: animacion portal_3
       rect:
         serializedVersion: 2
-        x: 2344
-        y: 18
-        width: 666
-        height: 981
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1293
+        y: 135
+        width: 405
+        height: 375
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f7c4897b0760f745b4e82ab52b2632f
-      internalID: 1687850922
+      spriteID: 224922e95e410a84bbfae4c913d25c23
+      internalID: -464917767
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Muerto-Saturno_4
+      name: animacion portal_9
       rect:
         serializedVersion: 2
-        x: 3246
-        y: 0
-        width: 669
-        height: 1001
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 2341
+        y: 188
+        width: 318
+        height: 293
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc18c583a03c1224fab43d74a8c7aaca
-      internalID: 1480745436
+      spriteID: ed08faae8ae91f5419d52349231970c4
+      internalID: -1138386327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Muerto-Saturno_5
+      name: animacion portal_5
       rect:
         serializedVersion: 2
-        x: 4068
-        y: 11
-        width: 666
-        height: 979
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 0
+        y: 588
+        width: 850
+        height: 655
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c24ea9ca2110a3d4fbb400603c6f7955
-      internalID: 1212428950
+      spriteID: b2b298e1f0ca39c419a67505ae1a3668
+      internalID: 444305559
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Muerto-Saturno_6
+      name: animacion portal_6
       rect:
         serializedVersion: 2
-        x: 4986
-        y: 0
-        width: 669
-        height: 1001
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1138
+        y: 610
+        width: 684
+        height: 700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df95f90e50b7a124a8f8d0c5808b2c00
-      internalID: 473749990
+      spriteID: bb8d6f546bb59d24cbfab669b9e62ba0
+      internalID: 1719633646
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Muerto-Saturno_7
+      name: animacion portal_7
       rect:
         serializedVersion: 2
-        x: 5863
-        y: 0
-        width: 664
-        height: 1001
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 142
+        y: 56
+        width: 618
+        height: 529
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc0eb3b83b4eed74aa171b79460a4611
-      internalID: -492469316
+      spriteID: ba891235e384f1a4997e7e99d3852fea
+      internalID: 651243465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacion portal_8
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 620
+        width: 696
+        height: 659
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19def7fa58106b449939d91f34948099
+      internalID: 2139359918
       vertices: []
       indices: 
       edges: []
@@ -293,7 +314,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: dbd9644fae05c734e93315168169aec4
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -301,14 +322,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Muerto-Saturno_0: 502835894
-      Muerto-Saturno_1: -232648482
-      Muerto-Saturno_2: 1203075050
-      Muerto-Saturno_3: 1687850922
-      Muerto-Saturno_4: 1480745436
-      Muerto-Saturno_5: 1212428950
-      Muerto-Saturno_6: 473749990
-      Muerto-Saturno_7: -492469316
+      animacion portal_0: 53155694
+      animacion portal_1: 1142843239
+      animacion portal_2: 1062974726
+      animacion portal_3: -464917767
+      animacion portal_5: 444305559
+      animacion portal_6: 1719633646
+      animacion portal_7: 651243465
+      animacion portal_8: 2139359918
+      animacion portal_9: -1138386327
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

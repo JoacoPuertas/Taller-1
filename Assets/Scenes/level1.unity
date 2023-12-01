@@ -917,7 +917,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b309536772c8645498df6784e3803d51, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0d87a88b86af5d443b4ab691a518ed61, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1659,7 +1659,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12, y: -376}
+  m_AnchoredPosition: {x: 12, y: -327}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &392488212
@@ -1678,6 +1678,7 @@ MonoBehaviour:
   _Oleada2: {fileID: 857583209}
   _Saturno: {fileID: 1114254313}
   _corazoncito: {fileID: 920020513}
+  _Portal: {fileID: 0}
   timer: 20
   textoTimer: {fileID: 1936821233}
   textoTimerOleada: {fileID: 392488213}
@@ -1716,9 +1717,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '3.0
-
-'
+  m_Text: 3
 --- !u!222 &392488214
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1900,14 +1899,14 @@ RectTransform:
   m_GameObject: {fileID: 418343919}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 2.313187, z: 2.313187}
+  m_LocalScale: {x: 7, y: 5.09, z: 2.313187}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 927847180}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 655, y: 432}
+  m_AnchoredPosition: {x: 641, y: 419}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &418343921
@@ -1930,7 +1929,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6f9bbd7434186c44fa6d0e853811ed2d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4dc52829a07dc6a4fb52db55c1a14d77, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7304,8 +7303,8 @@ RectTransform:
   m_GameObject: {fileID: 1214357702}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 2.6666698, z: 2.6666698}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 6, y: 3.34, z: 3.34}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 927847180}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7340,14 +7339,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2289251, g: 0.6981132, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 575c829b2bb4834408c235a8bd05775f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6ea5c87e6d5979b4e8ef6050468f093a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12372,6 +12371,7 @@ MonoBehaviour:
   _Oleada2: {fileID: 857583209}
   _Saturno: {fileID: 1114254313}
   _corazoncito: {fileID: 2644913822322071183, guid: 3833f7319b233ad46a654be20bb74965, type: 3}
+  _Portal: {fileID: 0}
   timer: 20
   textoTimer: {fileID: 1936821233}
   textoTimerOleada: {fileID: 392488213}

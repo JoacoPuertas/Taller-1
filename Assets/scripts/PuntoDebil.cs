@@ -32,7 +32,7 @@ public class PuntoDebil : MonoBehaviour
     {
         if (OnlyParent) { return; }
         if (isTerrestre) { return; }
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.Alpha0))
         {
             AvisarASAturno();
         }
