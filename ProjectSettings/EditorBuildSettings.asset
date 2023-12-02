@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Cinematicas.unity
-    guid: e24db9b262a61de4284b040ce2483510
-  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 96bc3791a2f524b41b8a1662be382820
+  - enabled: 1
+    path: Assets/Scenes/Cinematicas.unity
+    guid: e24db9b262a61de4284b040ce2483510
   - enabled: 1
     path: Assets/Scenes/level1.unity
     guid: e4f33897d3fd78745bbed8dd3a600e27
