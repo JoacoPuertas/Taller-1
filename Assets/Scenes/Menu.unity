@@ -1387,11 +1387,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 133.169, y: 212.065, z: 377.05902}
---- !u!1 &255269630 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4123451352702088950, guid: 228f29759ee627c47adb191b48786ec5, type: 3}
-  m_PrefabInstance: {fileID: 709717401}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &256582769
 GameObject:
   m_ObjectHideFlags: 0
@@ -1942,7 +1937,7 @@ GameObject:
   - component: {fileID: 375114888}
   - component: {fileID: 375114891}
   - component: {fileID: 375114890}
-  - component: {fileID: 375114889}
+  - component: {fileID: 375114892}
   m_Layer: 5
   m_Name: Mira
   m_TagString: Untagged
@@ -1969,19 +1964,6 @@ RectTransform:
   m_AnchoredPosition: {x: 9.694702, y: 621.11316}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &375114889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 375114887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3f9476c1aabf8947bd14eb7dbd36a84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  flashPrefab: {fileID: 255269630}
 --- !u!114 &375114890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2020,6 +2002,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 375114887}
   m_CullTransparentMesh: 1
+--- !u!114 &375114892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375114887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b58cf2152570b7946914fd42ec0fac11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &386024089
 GameObject:
   m_ObjectHideFlags: 0

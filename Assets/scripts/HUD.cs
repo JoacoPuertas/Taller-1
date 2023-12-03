@@ -58,7 +58,7 @@ public class HUD : MonoBehaviour
 
     public void ActivarVidas(int vidas)
     {
-        if (vidas >= 5) { return; }
+        //if (vidas >= 5) { return; }
         for (int i = 0; i < vidas; i++)
         {
             if (!vidasGo[i].activeInHierarchy)

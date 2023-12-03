@@ -10,12 +10,10 @@ public class FollowMouse : MonoBehaviour
     private void Start()
     {
         rectTransform = GetComponent<RectTransform>();
-        Cursor.visible = false;
     }
 
     private void Update()
     {
-        Cursor.visible = false;
         // Obtén la posición del ratón en la ventana
         Vector2 mousePosition = Input.mousePosition;
 

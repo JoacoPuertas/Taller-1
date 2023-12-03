@@ -19,6 +19,7 @@ public class Timer : MonoBehaviour
     public float CinematicaTimer = 15;
     private bool _heartSpawned = true;
     private bool Listo = true;
+    [SerializeField] private GameObject _Vida5;
 
     private string estaEscena;
 
@@ -58,8 +59,9 @@ public class Timer : MonoBehaviour
                 timer = 20;
             }
 
-            if (timer < 15 && _heartSpawned && estaEscena == "Level2")
+            if (timer < 15 && _heartSpawned && estaEscena == "Level2" && timer >= 5)
             {
+                if (_Vida5.activeSelf){ return; }
                 //Instantiate(_corazoncito);
                 _corazoncito.SetActive(true);
                 _heartSpawned = false;

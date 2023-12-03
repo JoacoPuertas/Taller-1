@@ -11,7 +11,6 @@ public class Mira2 : MonoBehaviour
     private void Start()
     {
         rectTransform = GetComponent<RectTransform>();
-        Cursor.visible = false;
     }
 
     private void Update()
